@@ -1,0 +1,56 @@
+﻿<div class="transform_box transformdownload_box">
+    <div class="caption">转码文件列表</div>
+    <div class="close"><span style="position:relative; top:-5px;left:0;">×</span></div>
+    <div class="transformdownload fix">
+
+   {{#each this}}
+        {{#equal transcodeType 1}}
+             <div class="download-network format-container none">
+                 <h3>网络格式</h3>
+        {{else}}
+             <div class="download-definition format-container none">
+                 <h3>专业格式</h3>
+        {{/equal}}
+                 <ul class="format-box">
+                     <li>
+                         <div class="format-left">
+                             <a class="standard">
+                                 <span>{{fileType}}</span>
+                             </a>
+                             <a class="size">
+                                 <span>{{imageWidth}}*{{imageHeight}}</span>
+                             </a>
+                             <div class="setting-icon">
+                                 <i class="trans-delete"></i>
+                                 <i class="trans-copy"></i>
+                                 <i class="trans-share"></i>
+                                 <i class="trans-undo"></i>
+                             </div>
+                         </div>
+                         <a class="address-copy" title="{{filePath}}">{{filePath}}</a>
+                         <span class="txt">还有<b>6</b>天过期</span>
+                     </li>
+                     <li>
+                         <div class="format-left">
+                             <a class="standard">
+                                 <span>{{fileType}}</span>
+                             </a>
+                             <a class="size">
+                                 <span>{{imageWidth}}*{{imageHeight}}</span>
+                             </a>
+                             <div class="setting-icon">
+                                 <i class="trans-delete"></i>
+                                 <i class="trans-undo"></i>
+                             </div>
+                         </div>
+                         <a class="address-copy" title="{{filePath}}">{{filePath}}</a>
+                         <span class="txt error">已经过期</span>
+                     </li>
+                 </ul>
+             </div>
+   {{/each}}
+                 <div
+                 <div class="c_box mt20">
+                     <input class="creation my f18 wf" id="wf" type="button" value="继续转码" style="margin-bottom:25px;">
+                 </div>
+</div>

@@ -1,0 +1,89 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>主页</title>
+<link type="text/css" rel="stylesheet" href="css/reset-min.css">
+<link type="text/css" rel="stylesheet" href="css/base-min.css">
+    <link type="text/css" rel="stylesheet" href="css/login.css">
+    <script type="text/javascript" src="js/libs/jquery.js"></script>
+</head>
+
+<body class="login-bg">
+<!--<div class="box">
+	<div class="logo"><img src="images/login/logo.png" width="161" height="78"></div>
+    <div class="input">
+        <input id="js_user" type="text" placeholder="邮箱/手机号码/MCloud ID" />
+    </div>
+    <div class="input">
+        <input id="js_password" type="password" placeholder="密码" />
+    </div>
+
+    <div class="input"><input id="button" name="Submit" type="button" class="btn login" value="登  录" onclick="check()"/></div>
+    <div class="input"><a class="forget" href="#">忘记密码?</a></div>
+    <div class="input"><input type="button" class="btn reg" value="注册新 MCloud 帐户"/></div>
+    <p id="q"></p>
+</div>-->
+    <div class="login-box">
+        <div class="login-logo"><img src="images/mcloud/bb_s.png" width="110" height="78"></div>
+        <div class="login-input"><input id="js_user" type="text" value="admin" placeholder="邮箱/手机号码/百灵 ID" /></div>
+        <div class="login-input">
+            <input id="js_password" type="password" value="Pass2word" placeholder="密码" />
+            <span class="remin"></span>
+        </div>
+        <div class="login-input"><input id="button" name="Submit" type="button" class="btn login" value="登  录" onclick="check()" /></div>
+        <div class="login-input"><a class="login-forget" href="#">忘记密码?</a></div>
+        <div class="login-input"><input type="button" class="btn register" value="注册新百灵帐户" /></div>
+        <p id="q"></p>
+    </div>
+    <script type="text/javascript">
+        function checkEmail(str) {
+            //邮件地址正则表达式
+            isEmail1 = /^\w+([\.\-]\w+)*\@\w+([\.\-]\w+)*\.\w+$/;
+            //邮件地址正则表达式
+            isEmail2 = /^.*@[^_]*$/;
+            //验证邮件地址，返回结果
+            return (isEmail1.test(str) && isEmail2.test(str));
+        }
+        function checkPhone(str) {
+            //手机号码正则表达式
+            isPhone = /^(13[0-9]{9})| (18[0-9]{9}) |(15[89][0-9]{8})$/;
+            //手机号码正则表达式
+            //返回结果
+            return (isPhone.test(str));
+        }
+        function checkPassword(str) {
+            //密码正则表达式
+            isPassword = /^[\@A-Za-z0-9\!\#\$\%\^\&\*\.\~]{6,22}$/;
+            //密码正则表达式
+            //返回结果
+            return (isPassword.test(str));
+        }
+
+        function check() {
+            var bb = document.getElementById("js_user").value;//js_user为文本框的ID
+            var aa = document.getElementById("js_password").value;
+            if (!(checkEmail(bb) && !checkPhone(bb))) {
+                //判断账号和密码的正确
+                if (checkPassword(aa)) {
+                    console.log("账号密码全部正确，登陆成功！");
+                    setTimeout("location.href='loading.html'", 500);
+                }
+                else {
+                    console.log("密码格式错误，登陆失败！");
+                }
+            }
+            else {
+                alert("账号格式错误");
+            }
+        }
+
+        $(function() {
+            $('.register').bind('click', function() {
+                location.href = 'register.html';
+            });
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+@charset "utf-8";
+.box { 
+      width: 100%; 
+}
+.header {
+      background: #151517;
+	  height: 67px;
+}
+.header .logo {
+      padding-left: 50px;
+	  padding-top: 14px;
+	  float: left;
+}
+.header a {
+      line-height: 67px;
+      font-size: 18px;
+	  color: #FFF;
+	  float: right;
+	  margin-right: 30px;
+}
+
+.main { 
+      background: #292a2d; padding-bottom:40px; padding-top:10px;
+}
+.main_top { 
+      width: 1198px; 
+	  height:400px;
+	  background:url(../images/user2/user2_03.jpg);
+	  margin:0 auto;
+	  position:relative;
+	  color:#FFF;
+}
+
+.main_top ul {
+    bottom: 10px;
+    left: 30px;
+    position: absolute;
+}
+.main .cc {
+       font-size:36px;
+}
+.main_centre { 
+       width:1199px; 
+       margin:20px auto 0 auto;}
+.main_centre_left { 
+       width:794px; 
+	   float:left;   
+}
+.left_top {
+       background:url(../images/user2/user2_07.jpg);
+	   width:792px; 
+	   height:446px; 
+	   color:#FFF;
+	   position:relative;
+}
+.left_top ul { 
+       position:absolute; 
+	   left:40px; 
+	   bottom:40px;}
+.an {  width:80px; 
+       height:80px;}
+ Button{ 
+       width:50px; 
+	   height:50px;
+	   background:#000;
+	   border:none; 
+	   opacity:0.3;
+	   position:absolute;
+	   top:50%;
+	   left:50%;
+	   margin-left:-25px;
+	   margin-top:-25px;  
+	   }
+ span{ 
+       color:#fff; 
+	   font-size:45px; 
+	   line-height:0;}
+
+.left_down ul { padding: 20px 20px 10px;}
+.sx { 
+       font-size:36px;}
+.left_down { 
+       margin-top:10px; 
+	   width:794px;}
+.main_centre_left .left_blue { 
+       width:381px; 
+	   background:#FFFFFF;
+	   float:left;
+	   }
+ dl dd {  
+	   border-bottom: 1px dashed #9d9d9d;}
+.main_centre_left .ck { 
+       width:30px; 
+	   height:20px; 
+	   background:#b2b2b2; 
+	   margin-left:10px;}
+.main_centre_left a { 
+       color:#FFF; 
+	   padding-left:4px;}
+.main_centre_left .black { 
+       width:400px; float:right;
+	   background:#FFFFFF;
+	   }
+.main_centre_right { 
+       float:right; 
+	   color:#FFF;}
+.right_up {
+	   height:257px;
+	   width: 393px;
+	   background:url(../images/user2/user2_09.jpg);
+	   position:relative;
+}
+.main_centre_right .right_mid { 
+       margin-top:10px; 
+	   margin-bottom:10px;}
+.main_centre_right ul { 
+       position:absolute; 
+	   left:30px; 
+	   bottom:10px;}
+.right_mid {
+       background:url(../images/user2/user2_11.jpg);
+	   width:393px;
+	   height:285px;
+	   position:relative;}
+.right_bel{
+       background:url(../images/user2/user2_19.jpg);
+	   width:395px;
+	   height:259px;
+	   position:relative;}
+.footer { 
+       background:#000; 
+	   height:50px; 
+	   color:#FFF; 
+	   text-align:center; 
+	   line-height:50px;}

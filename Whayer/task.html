@@ -1,0 +1,306 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="css/reset-min.css">
+    <link type="text/css" rel="stylesheet" href="css/base-min.css">
+    <link href="css/manage.css" rel="stylesheet" />
+</head>
+<body style="background-color: #292929;">
+    <!--头部-->
+    <div class="header">
+        <div>
+            <div class="logo"></div>
+            <div class="loginbox">
+                <div class="search">
+                    <input id="s" type="text" />
+                    <div class="searchimg"></div>
+                </div>
+                <div class="info">
+                    <span></span>
+                    <a href="#">{{name}}</a>
+                    <i></i>
+                    <div class="dd">
+                        <div><a target="_blank">个人中心</a></div>
+                        <div><a href="/site/login.html" target="_self">退出登录</a></div>
+                    </div>
+                </div>
+                <a class="people l"></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="-tm-main">
+        <div>
+            <!--内容左边-->
+            <div class="-tm-left leftnav-region">
+                <div>
+                    <ul class="nav">
+                        <li class="active" style="background: rgb(41, 41, 41);"><a href="#nav/All" title="全部文件"><img src="images/taskmanage/video.png" alt="">视音频审阅</a></li>
+                        <li><a href="#nav/Clip" title="视音频"><img src="images/taskmanage/cut1.png" alt="">剪切</a></li>
+                        <li><a href="" title=""><img src="images/taskmanage/zhuanma1.png" alt="">转码</a></li>
+                        <li><a href="#nav/Picture" title="图片"><img src="images/taskmanage/left-hecheng1.png" alt="">合成新素材</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--内容右边-->
+            <!---------------------------------------视音频审阅--------------------------------------------->
+            <div class="-tm-right right-region">
+                    <div class="loginbox">
+                        <div class="create-time"><a class="name js-name" data-sort="entityname">按照创建时间  ↑</a><span style="float:right;">∨</span></div>
+                    </div>
+                    <div class="-tm-aoreview">
+                        <ul>
+                            <li>
+                                <span class="-tm-img"><img src="images/taskmanage/shengyue_video.png" /></span>
+                                <span class="-tm-cut-name -tm-name">广告vr 剪切视频 09-30第三版</span>
+                                <span class="-tm-time">xusuai在2014-08-25 14:00:03创建</span>
+                                <div class="-tm-hide">
+                                    <ul>
+                                        <li class="shengyue_enter"></li>
+                                        <li class="-tm-edit"></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="-tm-img"><img src="images/taskmanage/shengyue_music.png" /></span>
+                                <span class="-tm-cut-name -tm-name">上元科技集团春节晚会节目剪切demo版</span>
+                                <span class="-tm-time">shangyuanadmin在2014-08-25 14:00:03创建</span>
+                                <div class="-tm-hide">
+                                    <ul>
+                                        <li class="shengyue_enter"></li>
+                                        <li class="-tm-edit"></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="page">
+                        <div>
+                            <div class="total f14">已加载全部共<span style="color: #0FF;">48</span>个</div>
+                            <div class="page_nav">
+                                <a href="#" class="first js-first js-navigatable" data-page="1">  &lt;&lt;  </a>
+                                <a href="#" class="pre js-previous js-navigatable" data-page="1">  &lt;  </a>
+                                <span class="current ml10 mr5">1</span>/
+                                <span class="all ml5 mr10">3</span>
+                                <a href="#" class="next js-next js-navigatable" data-page="2">  &gt;  </a>
+                                <a href="#" class="last js-last js-navigatable" data-page="3">  &gt;&gt;  </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!---------------------------------------剪切--------------------------------------------->
+            <!--<div class="-tm-right right-region">
+                    <div class="loginbox">
+                        <div class="create-time"><a class="name js-name" data-sort="entityname">按照创建时间  ↑</a><span style="float:right;">∨</span></div>
+                    </div>
+                    <div class="-tm-aoreview">
+                        <ul>
+                            <li>
+                                <span class="-tm-img"><img src="images/taskmanage/shengyue_video.png" /></span>
+                                <span class="-tm-cut-name -tm-name">广告VR 剪切视频 09-30第三版</span>
+                                <span class="-tm-cut-time -tm-time">XuSuai在2014-08-25 14:00:03创建</span>
+                                <span class="-tm-time -tm-part">4个片段</span>
+                                <div class="-tm-hide">
+                                    <ul>
+                                        <li class="shengyue_enter"></li>
+                                        <li class="-tm-edit"></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="-tm-img"><img src="images/taskmanage/shengyue_music.png" /></span>
+                                <span class="-tm-cut-name -tm-name">上元科技集团春节晚会节目剪切Demo版</span>
+                                <span class="-tm-cut-time -tm-time">Shangyuanadmin在2014-08-25 14:00:03创建</span>
+                                <span class="-tm-time -tm-part">5个片段</span>
+                                <div class="-tm-hide">
+                                    <ul>
+                                        <li class="shengyue_enter"></li>
+                                        <li class="-tm-edit"></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="page">
+                        <div>
+                            <div class="total f14">已加载全部共<span style="color: #0FF;">48</span>个</div>
+                            <div class="page_nav">
+                                <a href="#" class="first js-first js-navigatable" data-page="1">  &lt;&lt;  </a>
+                                <a href="#" class="pre js-previous js-navigatable" data-page="1">  &lt;  </a>
+                                <span class="current ml10 mr5">1</span>/
+                                <span class="all ml5 mr10">3</span>
+                                <a href="#" class="next js-next js-navigatable" data-page="2">  &gt;  </a>
+                                <a href="#" class="last js-last js-navigatable" data-page="3">  &gt;&gt;  </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+            <!---------------------------------------转码--------------------------------------------->
+            <!--<div class="-tm-right right-region">
+                    <div class="loginbox">
+                        <div class="create-time"><a class="name js-name" data-sort="entityname">按照创建时间  ↑</a><span style="float:right;">∨</span></div>
+                        <div class="create-time all-state"><a class="name js-name" data-sort="entityname">所有状态</a><span style="float:right;">∨</span></div>
+                    </div>
+                    <div class="-tm-aoreview">
+                        <ul>
+                            <li>
+                                <span class="-tm-transform-name -tm-name">
+                                    <p>广告VR 剪切视频 09-30第三版</p>
+                                    <i>2014-08-25 14:00:03</i>
+                                </span>
+                                <span class="-tm-dl">
+                                    <dl class="-tm-cut-form">
+                                        <dt class="-tm-form code-rate">MP4</dt>
+                                        <dt class="-tm-size code-rate">1024*768</dt>
+                                        <dt class="trans-arrow code-rate"></dt>
+                                        <dt class="-tm-mav code-rate">MAV</dt>
+                                        <dt class="-tm-size code-rate">720*480</dt>
+                                    </dl>
+                                </span>
+
+                                <span class="-tm-transform-time -tm-time">
+                                    00:03:05.30
+                                </span>
+                                <span class="-tm-time -tm-transform-size">45M</span>
+                                <span class="-tm-time -tm-part"><img src="images/taskmanage/success1.png" />转码完成</span>
+                            </li>
+                            <li>
+                                <span class="-tm-transform-name -tm-name">
+                                    <p>上元科技集团春节晚会节目剪切Demo版</p>
+                                    <i>2014-08-25 14:00:03</i>
+                                </span>
+                                <span class="-tm-dl">
+                                    <dl class="-tm-cut-form">
+                                        <dt class="-tm-mav code-rate">MAV</dt>
+                                        <dt class="-tm-size code-rate">720*480</dt>
+                                        <dt class="trans-arrow code-rate"></dt>
+                                        <dt class="-tm-form code-rate">MP4</dt>
+                                        <dt class="-tm-size code-rate">1024*768</dt>
+                                    </dl>
+                                </span>
+                                <span class="-tm-transform-time -tm-time">00:03:05.30</span>
+                                <span class="-tm-time -tm-transform-size"></span>
+                                <span class="-tm-time -tm-part"><img src="images/taskmanage/fail1.png" />转码失败</span>
+                                <div class="-tm-hide">
+                                    <ul>
+                                        <li class="error"></li>
+                                        <li class="renewal"></li>
+                                        <li class="delete"></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="-tm-transform-name -tm-name">
+                                    <p>广告VR 剪切视频 09-30第三版</p>
+                                    <i>2014-08-25 14:00:03</i>
+                                </span>
+                                <span class="-tm-dl">
+                                    <dl class="-tm-cut-form">
+                                        <dt class="-tm-form code-rate">MP4</dt>
+                                        <dt class="-tm-size code-rate">1024*768</dt>
+                                        <dt class="trans-arrow code-rate"></dt>
+                                        <dt class="-tm-blue code-rate">蓝光</dt>
+                                        <dt class="-tm-size code-rate">高清</dt>
+                                    </dl>
+                                </span>
+                                <span class="-tm-transform-time -tm-time">00:03:05.30</span>
+                                <span class="-tm-time -tm-transform-size"></span>
+                                <span class="-tm-time -tm-part"><img src="images/taskmanage/now1.png" />正在转码</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="page">
+                        <div>
+                            <div class="total f14">已加载全部共<span style="color: #0FF;">48</span>个</div>
+                            <div class="page_nav">
+                                <a href="#" class="first js-first js-navigatable" data-page="1">  &lt;&lt;  </a>
+                                <a href="#" class="pre js-previous js-navigatable" data-page="1">  &lt;  </a>
+                                <span class="current ml10 mr5">1</span>/
+                                <span class="all ml5 mr10">3</span>
+                                <a href="#" class="next js-next js-navigatable" data-page="2">  &gt;  </a>
+                                <a href="#" class="last js-last js-navigatable" data-page="3">  &gt;&gt;  </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+            <!---------------------------------------合成新素材--------------------------------------------->
+            <!--<div class="-tm-right right-region">
+                <div class="loginbox">
+                    <div class="create-time"><a class="name js-name" data-sort="entityname">按照创建时间  ↑</a><span style="float:right;">∨</span></div>
+                    <div class="create-time all-state"><a class="name js-name" data-sort="entityname">所有状态</a><span style="float:right;">∨</span></div>
+                </div>
+                <div class="-tm-aoreview">
+                    <ul>
+                        <li>
+                            <span class="-tm-transform-name -tm-name">
+                                <p>新素材111</p>
+                                <i>2014-08-25 14:00:03</i>
+                            </span>
+                            <span class="-tm-dl">
+                                <dl class="-tm-cut-form"></dl>
+                            </span>
+
+                            <span class="-tm-transform-time -tm-time">
+                                00:03:05.30
+                            </span>
+                            <span class="-tm-time -tm-transform-size">45M</span>
+                            <span class="-tm-time -tm-part"><img src="images/taskmanage/success1.png" />转码完成</span>
+                        </li>
+                        <li>
+                            <span class="-tm-transform-name -tm-name">
+                                <p>合成后新素材222</p>
+                                <i>2014-08-25 14:00:03</i>
+                            </span>
+                            <span class="-tm-dl">
+                                <dl class="-tm-cut-form"></dl>
+                            </span>
+                            <span class="-tm-transform-time -tm-time">00:03:05.30</span>
+                            <span class="-tm-time -tm-transform-size"></span>
+                            <span class="-tm-time -tm-part"><img src="images/taskmanage/fail1.png" />转码失败</span>
+                            <div class="-tm-hide">
+                                <ul>
+                                    <li class="error"></li>
+                                    <li class="renewal"></li>
+                                    <li class="delete"></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="-tm-transform-name -tm-name">
+                                <p>合成后新素材333</p>
+                                <i>2014-08-25 14:00:03</i>
+                            </span>
+                            <span class="-tm-dl">
+                                <dl class="-tm-cut-form"></dl>
+                            </span>
+                            <span class="-tm-transform-time -tm-time">00:03:05.30</span>
+                            <span class="-tm-time -tm-transform-size"></span>
+                            <span class="-tm-time -tm-part"><img src="images/taskmanage/now1.png" />正在转码</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="page">
+                    <div>
+                        <div class="total f14">已加载全部共<span style="color: #0FF;">48</span>个</div>
+                        <div class="page_nav">
+                            <a href="#" class="first js-first js-navigatable" data-page="1">  &lt;&lt;  </a>
+                            <a href="#" class="pre js-previous js-navigatable" data-page="1">  &lt;  </a>
+                            <span class="current ml10 mr5">1</span>/
+                            <span class="all ml5 mr10">3</span>
+                            <a href="#" class="next js-next js-navigatable" data-page="2">  &gt;  </a>
+                            <a href="#" class="last js-last js-navigatable" data-page="3">  &gt;&gt;  </a>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+            
+        </div>
+        
+
+    </div>
+</body>
+</html>

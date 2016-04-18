@@ -1,0 +1,657 @@
+﻿@charset "utf-8";
+/*html,body{
+    width:100%;
+    height:100%;
+}*/
+body{
+     background: #121212;
+    font: 12px Verdana, Geneva, sans-serif;
+    min-width: 1000px;
+}
+body>div {
+    width:100%;
+    height:100%;
+       
+}
+
+.cut-header{
+    position:fixed;
+    height: 50px;
+    width: 100%;
+    background: #121212;
+    top:0;
+    left:0;
+    z-index: 999;
+    zoom:1;
+}
+.cut-header .logo{ 
+    height: 50px; 
+    width: 194px; 
+    margin-left: 20px; 
+
+}
+.cut-header .logo a {
+    height: 50px; 
+    width: 194px;
+    display:inline-block;
+    background: url(../images/mcloud/bb_s.png) no-repeat scroll left center;
+    background-size:60px 42px;
+}
+.cut-content{
+    background: #292929;
+    width:100%;
+    height: calc(100%  - 210px - 50px);
+    height: -webkit-calc(100%  - 210px - 50px);
+    height: -moz-calc(100%  - 210px - 50px);
+    position: fixed;
+    top:50px;
+    bottom: 270px;
+}
+.cut-content-box {
+    height: 100%;
+    width: 100%;
+
+}
+.cut-content .cut-left{
+    margin-right: 310px;
+    height: 100%;
+    width: calc(100%  - 310px);
+    width: -webkit-calc(100%  - 310px);
+    width: -moz-calc(100%  - 310px);
+    border-right:1px solid #424242;
+    position: relative;
+}
+.cut-content .cut-left > div {
+    height: 100%;
+    width: 100%; 
+}
+.cut-content .cut-right{
+    position: absolute;
+    top: 0;
+    right:0;
+    width: 309px;
+    border-left: 1px solid #424242;
+    height:calc(100%);
+    height:-moz-calc(100%);
+    height:-webkit-calc(100%);
+    background: #212121;
+}
+.cut-content .cut-left h2{
+    font: bold 18px "微软雅黑";
+    color: #FFF;
+    /*height: 20px;
+    line-height: 30px;*/
+    margin: 4px 0;
+    margin-left:10px;
+}
+.cut-content .v_area{ 
+    overflow: hidden;
+    margin: 10px;
+    margin-top:0;
+    height: calc(100% - 20px - 15px);
+    height: -webkit-calc(100% - 20px - 15px);
+    height: -moz-calc(100% - 20px - 15px);
+    background-color: #000;
+
+}
+.cut-content .leftmove .leftarrow{
+    display:block;
+    height:30px;
+    background: url(../images/cut/previous.png) no-repeat scroll center center;
+}
+.cut-content .rightmove .rightarrow{
+    display:block;
+    height:30px;
+    background: url(../images/cut/next.png) no-repeat scroll center center;
+}
+.cut-content .leftmove{
+    color:#fff;
+    width:30px;
+    height:80px;
+    background: -moz-linear-gradient(left, #575252,  #212121);/*Firefox*/
+    background: -o-linear-gradient(top, #575252 0%, #212121 100%);/*Opera*/
+    background-image:-webkit-gradient(linear, right bottom, left bottom, color-stop(0, #212121), color-stop(1,#575252)); /*Chrome*/
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#212121', endColorstr='#121212', GradientType='0'); /*IE*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#212121', endColorstr='#121212')"; /* IE8 */
+    background: -ms-linear-gradient(left, #575252,#212121);/* IE10 */
+    background: linear-gradient(left, #575252, #212121);
+    float:left;
+    margin-top: -15px;
+    text-align: center;
+    line-height: 80px;
+    outline:none;
+    border:none;
+}
+
+.cut-content .fragment-list {
+    min-height:50px;
+    max-height:calc(100% - 50px - 74px);/*560px;*/
+    max-height:-moz-calc(100% - 50px - 74px);
+    max-height:-webkit-calc(100% - 50px - 74px);
+    overflow-y:auto;
+
+    scrollbar-arrow-color:#000; /*三角箭头的颜色*/
+    scrollbar-face-color: #333; /*立体滚动条的颜色*/
+    scrollbar-3dlight-color: #666; /*立体滚动条亮边的颜色*/
+    scrollbar-highlight-color: #666; /*滚动条空白部分的颜色*/
+    scrollbar-shadow-color: #999; /*立体滚动条阴影的颜色*/
+    scrollbar-darkshadow-color: #666; /*立体滚动条强阴影的颜色*/
+    scrollbar-track-color: #666; /*立体滚动条背景颜色*/
+    scrollbar-base-color:#f8f8f8; /*滚动条的基本颜色*/
+}
+
+/* 设置滚动条的样式 */
+.cut-content .fragment-list::-webkit-scrollbar {
+    width: 11px;
+}
+/* 滚动槽 */
+.cut-content .fragment-list::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    background-color:#b9b4b4;
+}
+/* 滚动条滑块 */
+.cut-content .fragment-list::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color:#6f6d6d;
+    /*background: rgba(0,0,0,0.1);*/
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+.cut-content .fragment-list::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(255,0,0,0.4);
+}
+
+
+.cut-content .fragment-list .lists{
+
+    /*float:left;*/
+}
+
+
+
+.cut-content .rightmove{
+    color:#fff;
+    width:30px;
+    height:80px;
+    background: url(../images/cut/next.png) no-repeat scroll center center;
+    background: -moz-linear-gradient(left, #212121, #575252);/*Firefox*/
+    background: -o-linear-gradient(top, #212121 0%,#575252 100%);/*Opera*/
+    background-image: -webkit-gradient(linear, left bottom, right bottom, color-stop(0, #212121), color-stop(1,#575252)); /*Chrome*/
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#212121', endColorstr='#121212', GradientType='0'); /*IE*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#212121', endColorstr='#121212')"; /* IE8 */
+    background: -ms-linear-gradient(left, #212121, #575252);
+    background: linear-gradient(left, #212121, #575252);
+    float:right;
+    margin-top: -75px;
+    text-align: center;
+    line-height: 80px;
+    outline:none;
+    border:none;
+}
+.cut-content .v_area img{ width: 100%; height: 100%;}
+.cut-content .v_bar{
+    margin: 0px 0px 0px 10px;
+    background: #212121;
+    height: 65px;
+    padding-top: 15px;
+    min-width: 100px;
+    position: absolute;
+    width: calc(100% - 20px);
+    bottom: 0px;
+    opacity: 0.3;
+}
+.cut-content .v_bar .rightarrow:hover{
+    cursor:pointer;
+    background: url(../images/cut/next2.png) no-repeat scroll center center;
+}
+.cut-content .v_bar .leftarrow:hover{
+    cursor:pointer;
+    background: url(../images/cut/previous2.png) no-repeat scroll center center;
+}
+.cut-content .v_bar .ul-box{
+    /*position:relative;*/
+    margin-right:50px;
+    margin-left:50px;
+}
+.cut-content .v_bar ul{
+    margin: 0 auto;
+    height:60px;
+    /*width:1000px;*/   /*需要计算宽度*/
+    overflow:hidden;
+    text-align:center
+}
+.cut-content .v_bar ul li{
+    width: 80px;
+    height: 50px;
+    float: left;
+    display:inline;
+    margin-right: 20px;
+    border: 2px solid #2C2C2C;
+    cursor:pointer;
+}
+.cut-content .v_bar ul li img{
+    padding-bottom:0;
+    cursor:pointer;
+}
+.cut-content .v_bar ul li:hover{
+    width: 80px;
+    height: 50px;
+    border: 2px solid #047281;
+}
+.cut-content .v_bar ul li.active{
+    width: 80px;
+    height: 50px;
+    border: 2px solid #047281;
+}
+
+.cut-content .v_bar ul li.last{
+    margin-right: 0;
+
+}
+.cut-content .cut-right h2{
+    background: url(../images/cut/line.png) repeat-x scroll left bottom;
+    height: 50px;
+    font: bold 18px/50px "微软雅黑";
+    color: #FFF;
+    text-align:center;
+}
+.cut-content .topnav { 
+    margin: 20px auto; 
+    padding-left: 85px;
+    position: relative;
+    top:0;
+    width:100%;
+    background-color:#212121;
+}
+.cut-content .topnav>li{
+    float: left;
+    margin-right: 15px;
+}
+.cut-content .play,.cut-content .share,.cut-content .send, .cut-content .synthesis{
+    width: 32px;
+    height: 32px;
+    display:inline-block;
+    -weblit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+    cursor:pointer;
+}
+.cut-content .play{ background: url(../images/cut/icon_1.png) no-repeat scroll center center;}
+.cut-content .share{ background: url(../images/cut/icon_2.png) no-repeat scroll center center; }
+.cut-content .send{ background: url(../images/cut/icon_3.png) no-repeat scroll center center; }
+.cut-content .synthesis { background: url(../images/cut/synthesis.png) no-repeat scroll center center;}
+
+.cut-content .play:hover{ background: url(../images/cut/icon_1_1.png) no-repeat scroll center center;}
+.cut-content .share:hover{ background: url(../images/cut/icon_2_1.png) no-repeat scroll center center; }
+.cut-content .send:hover{ background: url(../images/cut/icon_3_1.png) no-repeat scroll center center; }
+.cut-content .synthesis:hover { background: url(../images/cut/synthesis_1.png) no-repeat scroll center center;}
+
+.cut-content .play.active  { background: url(../images/cut/icon_a1_h.png) no-repeat scroll center center;}
+.cut-content .play.active:hover { background: url(../images/cut/icon_a1_h_hover.png) no-repeat scroll center center;}
+
+.cut-content .lists li{
+    background: url(../images/cut/rim.jpg) no-repeat scroll left center;
+    height: 70px;
+    width: 280px;
+    margin: 0 auto 10px;
+    position: relative;
+}
+.cut-content .active li{ background: url(../images/cut/rim_active.jpg) no-repeat scroll left center;}
+.cut-content .lists li .imgs{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 80;
+    height: 50px;
+}
+.cut-content .lists li .title ,.cut-content .lists li .time{
+    position: absolute;
+    left: 120px;
+    height: 25px;
+    line-height: 25px;
+}
+.cut-content .lists li .title a{   
+    font: 16px "微软雅黑";
+    color: #FFF;
+}
+.cut-content .lists li .title{ top: 0px;}
+.cut-content .lists li .time{ top: 30px; color:#727272;}
+.cut-content .lists li .join ,.cut-content  .lists li .dele{
+    position: absolute;
+    right: 20px;
+    width: 16px;
+    height: 16px;
+}
+.cut-content .lists li .join {
+    top: 15px;
+    background: url(../images/cut/icon_4.png) no-repeat scroll center center;
+    cursor:pointer;
+}
+.cut-content .lists li .join:hover { background: url(../images/cut/edit_1.png) no-repeat scroll center center;}
+
+.cut-content .lists li .dele{
+    top: 40px;
+    background: url(../images/cut/icon_5.jpg) no-repeat scroll center center;
+    cursor:pointer;
+}
+.cut-content .lists li .dele:hover { background: url(../images/cut/del1.png) no-repeat scroll center center;}
+.cut-footer {
+    background: #121212;
+    position:fixed;
+    width:100%;
+    height: 190px;
+    overflow:hidden;
+    left: 0;
+    bottom:0;
+    z-index: 999;
+}
+.cut-footer .frame_bg{
+    height: 90px;
+    /*background: url(../images/cut/frame_bg.jpg) repeat-x scroll left center;*/
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.cut-footer .progress_bar{
+    height: 100%;
+    width: 100%;
+    background: #555555;
+
+}
+#currentInPointSpan, #currentOutPointSpan {
+    background:rgba(0,0,0,0.5);
+    line-height: 88px;
+    height:88px;
+    width:10px;
+    position: absolute;
+    top: 0;
+    cursor: hand;
+    z-index: 9999;
+}
+#currentInPointSpan{
+    border-right: 2px solid #cccccc;
+    left: 2px;  
+}
+
+#currentOutPointSpan{
+    border-left: 2px solid #cccccc;
+    right: 0;
+}
+
+#currentProgressSpan{
+    background:#ff0000;
+    line-height: 90px;
+    height:90px;
+    width: 3px;
+    border-radius: 4px;
+    position:absolute;
+    left: 0;
+    top: 0;
+    cursor:pointer;
+    z-index:100;
+    opacity: 0.5;
+}
+#timeLine_bg{
+    width:100%;
+    height:45px;
+    background:url("") repeat-x scroll left center ;
+    position: absolute;
+    top: 0;
+    left:2px;
+    border-top: 2px solid #000;
+}
+#timeLine_bg.white{
+    border-top: 2px solid #fff;
+}
+
+.left_line, .right_line{
+    height: 4px;
+    background-color: #121212;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.cut-footer .percent{
+    background: #d6d6d6;
+    height: 7px;
+}
+.cut-footer .pointer{
+    height: 90px;
+    width: 81px;
+    background: url(../images/cut/pointer.png) no-repeat scroll center top;
+    position: absolute;
+    bottom: 0;
+    left: 200px;
+
+}
+.cut-footer .pointer span{
+    height: 20px;
+    line-height: 20px;
+    color: #fff;
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+    font-size: 12px;
+}
+.cut-footer .range{
+    border: 2px solid #a9a9a9;
+    height: 84px;
+    border-bottom: 0;
+    width:18px;
+    position: absolute;
+    bottom: -4px;
+    left: 0px;
+    z-index:101;
+}
+.cut-footer .left_btn,.cut-footer .right_btn{
+    width: 18px;
+    height: 22px;
+    position: absolute;
+    bottom: 0px;
+
+}
+.cut-footer .left_btn{
+    background: url(../images/cut/btn_01.png) no-repeat scroll right center;
+    right: 0;
+}
+.cut-footer .right_btn{ 
+    background: url(../images/cut/btn_02.png) no-repeat scroll left center;
+    left: 0;
+}
+.cut-footer .options {
+    margin: 20px auto;
+    position: relative;
+    height: 83px;
+    width: 1080px;
+}
+.cut-footer .left_panel ,.cut-footer  .main-panel ,.cut-footer .right-panel{
+    position: relative;
+    top: 0;
+    width: 360px;
+    height: 83px;
+}
+.cut-footer .left_panel{
+    width: 250px;
+    color: #6b6b6b;
+    font-family: "微软雅黑";
+    font-weight: bold;
+    left: 0;
+    top: 0;
+}
+.cut-footer .left_panel .standard{
+    margin-bottom: 15px;
+}
+.cut-footer .left_panel .tape{
+     position: absolute;
+    left: 30px;
+    top: 20px;
+}
+.cut-footer .left_panel .num{
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
+.cut-footer .main-panel{
+    top: -80px;
+    left: 28%;
+    background: url(../images/cut/seap.png) no-repeat scroll left center;
+    padding: 0 15px;
+}
+.cut-footer .right-panel{
+    background: url(../images/cut/seap.png) no-repeat scroll left center;
+    padding: 0 45px;
+    top: -165px;
+    left: 64%;
+    right: 0;
+}
+.cut-footer .voice{ margin-top: 36px; background: url(../images/cut/voice.png) no-repeat scroll left center; width:8px; height: 12px; float: left;}
+.cut-footer .voice_bar ,.cut-footer  .control_bar{   border: 1px solid #2f3031; background: #121212; width:100px; float: left; margin: 0px 15px; height: 3px; border-radius: 2px; margin-top: 40px;  cursor:pointer;}
+.cut-footer .voice_full{
+    margin-top: 36px;
+    background: url(../images/cut/voice_full.png);
+    height: 12px;
+    width: 14px;
+    float: left;
+}
+
+.cut-footer .voice_full.active{
+    background: url(../images/cut/mute3.png);   
+}
+
+.cut-footer .options ul{ margin-top: 20px; margin-left: 30px;}
+
+.cut-footer .right-panel ul{ margin-left: 0;}
+.cut-footer .options ul li{
+    float: left;
+    width: 45px;
+    height: 45px;
+    margin-right: 20px;
+    cursor:pointer;
+}
+.cut-footer .options ul li.last{ margin-right: 0;	}
+.cut-footer .pre{
+    clear: both;
+    background: url(../images/cut/icon_6.png) no-repeat scroll left center;
+}
+.cut-footer .pre:hover{
+    background: url(../images/cut/icon_6_hover.png) no-repeat scroll left center;
+}
+.cut-footer .rerun{
+    background: url(../images/cut/icon_7.png) no-repeat scroll left center;
+}
+.cut-footer .rerun:hover{
+    background: url(../images/cut/icon_7_hover.png) no-repeat scroll left center;
+}
+.cut-footer .rerun.active{
+    background:url(../images/cut/icon_a71.png) no-repeat scroll left center;
+}
+.cut-footer .rerun.active:hover{
+    background:url(../images/cut/icon_a71_hover.png) no-repeat scroll left center;
+}
+
+.cut-footer .next{
+    background: url(../images/cut/icon_8.png) no-repeat scroll left center;
+}
+.cut-footer .next:hover{
+    background: url(../images/cut/icon_8_hover.png) no-repeat scroll left center;
+}
+.cut-footer .crop{
+    background: url(../images/cut/icon_9.png) no-repeat scroll left center;
+}
+.cut-footer .crop.active{
+    background: url(../images/cut/icon_9_hover.png) no-repeat scroll left center;
+}
+.cut-footer .add{
+    background: url(../images/cut/icon_10.png) no-repeat scroll left center;
+}
+.cut-footer .add:hover{
+    background: url(../images/cut/icon_10_hover.png) no-repeat scroll left center;
+}
+.cut-footer .backward,.cut-footer .control_bar,.cut-footer .forward,.cut-footer .scrollbar,.cut-footer .p1,.cut-footer .p2{
+    position: absolute;
+}
+.cut-footer .backward{
+    background: url(../images/cut/icon_12.png);
+    left: 200px;
+    top: 20px;
+    height: 15px;
+    width: 19px;
+}
+.cut-footer .control_bar{
+    left: 230px;
+    top: 25px;
+    margin: 0;
+    width: 150px;
+}
+.cut-footer .forward{
+    background: url(../images/cut/icon_11.png);
+    left: 390px;
+    top: 20px;
+    height: 15px;
+    width: 19px;
+}
+.cut-footer .scrollbar{
+    left: 230px;
+    top: 60px;
+    background: #555555;
+    height: 3px;
+    width: 150px;
+    border-bottom: 2px solid #2d2d2d;
+}
+.cut-footer .p1{
+    width: 20px;
+    height: 3px;
+    left: 30px;
+    top: 0px;
+    background: #f5c505;
+    border-bottom: 2px solid #9f8315;
+
+}
+.cut-footer .p2{
+    background: url(../images/cut/btn_03.png);
+    height: 10px;
+    width: 14px;
+    top: -3px;
+    left: 100px;
+}
+/******创建cut片段*********/
+.popup-lable {
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    width:120px;
+    font-family:"微软雅黑";
+    font-weight:bold;
+    margin: 10px 2px;    
+}
+.popup-cutlistName {
+    margin-bottom:18px; width:100%;  border:none;background: #EAEAEA;padding: 4px 0 4px 6px;font-size: 13px;
+}
+.popup-creatcutlist {
+    background-color: rgba(13, 191, 216, 0.60);
+    color:#fff;
+    font-size: 15px;
+    font-family:"微软雅黑";
+    height: 26px;
+    display: inline-block;
+    padding: 0 10px;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+}
+.popup-nameError {
+    border:1px solid red;
+}
+
+
+/*  滚动条样式  */
+.frameWrap{
+	overflow: auto;
+	position: relative;
+	background: #333;
+    padding: 10px 0 10px 10px;
+    height: 100%; 
+	-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+}

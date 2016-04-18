@@ -1,0 +1,706 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{054B2AAB-C3CB-4EA7-8195-5C00B0B2336A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Whayer</RootNamespace>
+    <AssemblyName>Whayer</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="401.html" />
+    <Content Include="404.html" />
+    <Content Include="css\backbone-treeview.css" />
+    <Content Include="css\backbone.modal.css" />
+    <Content Include="css\backbone.modal.theme.css" />
+    <Content Include="css\base-min.css" />
+    <Content Include="css\clipreview.css" />
+    <Content Include="css\cut.css" />
+    <Content Include="css\cut_load.css" />
+    <Content Include="css\dropzone.css" />
+    <Content Include="css\dropzone_basic.css" />
+    <Content Include="css\findPsw.css" />
+    <Content Include="css\jquery-ui-1.10.3.custom.css" />
+    <Content Include="css\jQuery.dialog.css" />
+    <Content Include="css\jquery.Jcrop.min.css" />
+    <Content Include="css\jquery.mCustomScrollbar.css" />
+    <Content Include="css\loading.css" />
+    <Content Include="css\login.css" />
+    <Content Include="css\manage.css" />
+    <Content Include="css\mcloud.css" />
+    <Content Include="css\notifier-base.css" />
+    <Content Include="css\notifier-theme-clean.css" />
+    <Content Include="css\notifier-theme-plastic.css" />
+    <Content Include="css\register.css" />
+    <Content Include="css\reset-min.css" />
+    <Content Include="css\template.css" />
+    <Content Include="css\tooltipster.css" />
+    <Content Include="css\user.css" />
+    <Content Include="css\user2.css" />
+    <Content Include="css\validationEngine.jquery.css" />
+    <Content Include="css\video-js.css" />
+    <Content Include="cut.html" />
+    <Content Include="findPsw.html" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="images\cut\btn_01.png" />
+    <Content Include="images\cut\btn_02.png" />
+    <Content Include="images\cut\btn_03.png" />
+    <Content Include="images\cut\del1.png" />
+    <Content Include="images\cut\edit_1.png" />
+    <Content Include="images\cut\frame_bg.jpg" />
+    <Content Include="images\cut\icon_1.png" />
+    <Content Include="images\cut\icon_10.png" />
+    <Content Include="images\cut\icon_10_1.png" />
+    <Content Include="images\cut\icon_10_hover.png" />
+    <Content Include="images\cut\icon_11.png" />
+    <Content Include="images\cut\icon_12.png" />
+    <Content Include="images\cut\icon_13.png" />
+    <Content Include="images\cut\icon_1_1.png" />
+    <Content Include="images\cut\icon_2.png" />
+    <Content Include="images\cut\icon_2_1.png" />
+    <Content Include="images\cut\icon_3.png" />
+    <Content Include="images\cut\icon_3_1.png" />
+    <Content Include="images\cut\icon_4.png" />
+    <Content Include="images\cut\icon_5.jpg" />
+    <Content Include="images\cut\icon_6.png" />
+    <Content Include="images\cut\icon_6_1.png" />
+    <Content Include="images\cut\icon_6_hover.png" />
+    <Content Include="images\cut\icon_7.png" />
+    <Content Include="images\cut\icon_7_1.png" />
+    <Content Include="images\cut\icon_7_hover.png" />
+    <Content Include="images\cut\icon_8.png" />
+    <Content Include="images\cut\icon_8_1.png" />
+    <Content Include="images\cut\icon_8_hover.png" />
+    <Content Include="images\cut\icon_9.png" />
+    <Content Include="images\cut\icon_9_1.png" />
+    <Content Include="images\cut\icon_9_hover.png" />
+    <Content Include="images\cut\icon_a1_h.png" />
+    <Content Include="images\cut\icon_a1_h_hover.png" />
+    <Content Include="images\cut\icon_a7.png" />
+    <Content Include="images\cut\icon_a71.png" />
+    <Content Include="images\cut\icon_a71_hover.png" />
+    <Content Include="images\cut\img_01.png" />
+    <Content Include="images\cut\img_02.png" />
+    <Content Include="images\cut\line.png" />
+    <Content Include="images\cut\logo.png" />
+    <Content Include="images\cut\merge_1920.jpg" />
+    <Content Include="images\cut\mute-1.png" />
+    <Content Include="images\cut\mute2.png" />
+    <Content Include="images\cut\mute3.png" />
+    <Content Include="images\cut\next.png" />
+    <Content Include="images\cut\next2.png" />
+    <Content Include="images\cut\pointer.png" />
+    <Content Include="images\cut\previous.png" />
+    <Content Include="images\cut\previous2.png" />
+    <Content Include="images\cut\qzone.gif" />
+    <Content Include="images\cut\renren.gif" />
+    <Content Include="images\cut\rim.jpg" />
+    <Content Include="images\cut\rim_active.jpg" />
+    <Content Include="images\cut\seap.png" />
+    <Content Include="images\cut\sinaminiblog.gif" />
+    <Content Include="images\cut\synthesis.png" />
+    <Content Include="images\cut\synthesis_1.png" />
+    <Content Include="images\cut\tenxun2.jpg" />
+    <Content Include="images\cut\video.jpg" />
+    <Content Include="images\cut\voice.png" />
+    <Content Include="images\cut\voice_full.png" />
+    <Content Include="images\cut\v_list.png" />
+    <Content Include="images\cut\weixin.gif" />
+    <Content Include="images\cut\youdaonote.gif" />
+    <Content Include="images\desc\1.1.png" />
+    <Content Include="images\desc\1.2.png" />
+    <Content Include="images\desc\2.2.png" />
+    <Content Include="images\desc\2.png" />
+    <Content Include="images\desc\222.png" />
+    <Content Include="images\desc\6.png" />
+    <Content Include="images\desc\61.png" />
+    <Content Include="images\desc\7.png" />
+    <Content Include="images\desc\71.png" />
+    <Content Include="images\desc\8.png" />
+    <Content Include="images\desc\81.png" />
+    <Content Include="images\desc\8888.png" />
+    <Content Include="images\desc\9.png" />
+    <Content Include="images\desc\92.png" />
+    <Content Include="images\desc\arrow.png" />
+    <Content Include="images\desc\arrow1.png" />
+    <Content Include="images\desc\brush.png" />
+    <Content Include="images\desc\brush1.png" />
+    <Content Include="images\desc\btn_01.png" />
+    <Content Include="images\desc\btn_02.png" />
+    <Content Include="images\desc\chat23.png" />
+    <Content Include="images\desc\circle.png" />
+    <Content Include="images\desc\circle1.png" />
+    <Content Include="images\desc\clear.png" />
+    <Content Include="images\desc\color.png" />
+    <Content Include="images\desc\cut.png" />
+    <Content Include="images\desc\ee.png" />
+    <Content Include="images\desc\full.png" />
+    <Content Include="images\desc\img_01.png" />
+    <Content Include="images\desc\micro.png" />
+    <Content Include="images\desc\point.png" />
+    <Content Include="images\desc\pointer.png" />
+    <Content Include="images\desc\qq.png" />
+    <Content Include="images\desc\rr.png" />
+    <Content Include="images\desc\scale.png" />
+    <Content Include="images\desc\screenshot.png" />
+    <Content Include="images\desc\screenshot1.png" />
+    <Content Include="images\desc\slash.png" />
+    <Content Include="images\desc\slash1.png" />
+    <Content Include="images\desc\square.png" />
+    <Content Include="images\desc\square1.png" />
+    <Content Include="images\desc\圆.png" />
+    <Content Include="images\edit\add_icon.png" />
+    <Content Include="images\edit\dropzone\spritemap%402x.png" />
+    <Content Include="images\edit\dropzone\spritemap.png" />
+    <Content Include="images\edit\img_01.png" />
+    <Content Include="images\edit\img_02.png" />
+    <Content Include="images\edit\img_03.jpg" />
+    <Content Include="images\edit\img_04.png" />
+    <Content Include="images\edit\img_05.jpg" />
+    <Content Include="images\edit_cut\trash.png" />
+    <Content Include="images\findPsw\step.png" />
+    <Content Include="images\Jcrop\Jcrop.gif" />
+    <Content Include="images\load\bg.jpg" />
+    <Content Include="images\load\loading.gif" />
+    <Content Include="images\load\loading.png" />
+    <Content Include="images\login\bg.png" />
+    <Content Include="images\login\logo.png" />
+    <Content Include="images\login\remin.png" />
+    <Content Include="images\manage\1.png" />
+    <Content Include="images\manage\2.png" />
+    <Content Include="images\manage\3.png" />
+    <Content Include="images\manage\404.png" />
+    <Content Include="images\manage\500.png" />
+    <Content Include="images\manage\audio-default.jpg" />
+    <Content Include="images\manage\avatar.png" />
+    <Content Include="images\manage\canot-view.jpg" />
+    <Content Include="images\manage\file.png" />
+    <Content Include="images\manage\folders-icon.png" />
+    <Content Include="images\manage\header.jpg" />
+    <Content Include="images\manage\icon-minus.png" />
+    <Content Include="images\manage\icon-plus.png" />
+    <Content Include="images\manage\icon.png" />
+    <Content Include="images\manage\icon_1.png" />
+    <Content Include="images\manage\icon_10.png" />
+    <Content Include="images\manage\icon_10_hover.png" />
+    <Content Include="images\manage\icon_11.png" />
+    <Content Include="images\manage\icon_11_A.png" />
+    <Content Include="images\manage\icon_11_A_hover.png" />
+    <Content Include="images\manage\icon_11_B.png" />
+    <Content Include="images\manage\icon_11_B_hover.png" />
+    <Content Include="images\manage\icon_11_hover.png" />
+    <Content Include="images\manage\icon_12.png" />
+    <Content Include="images\manage\icon_12_hover.png" />
+    <Content Include="images\manage\icon_13.png" />
+    <Content Include="images\manage\icon_13_hover.png" />
+    <Content Include="images\manage\icon_14.png" />
+    <Content Include="images\manage\icon_14_hover.png" />
+    <Content Include="images\manage\icon_15.png" />
+    <Content Include="images\manage\icon_15_hover.png" />
+    <Content Include="images\manage\icon_16.png" />
+    <Content Include="images\manage\icon_16_hover.png" />
+    <Content Include="images\manage\icon_17.png" />
+    <Content Include="images\manage\icon_171.png" />
+    <Content Include="images\manage\icon_18.png" />
+    <Content Include="images\manage\icon_19.png" />
+    <Content Include="images\manage\icon_19_hover.png" />
+    <Content Include="images\manage\icon_2.png" />
+    <Content Include="images\manage\icon_20.png" />
+    <Content Include="images\manage\icon_20_hover.png" />
+    <Content Include="images\manage\icon_3.png" />
+    <Content Include="images\manage\icon_4.png" />
+    <Content Include="images\manage\icon_5.png" />
+    <Content Include="images\manage\icon_53.png" />
+    <Content Include="images\manage\icon_6.png" />
+    <Content Include="images\manage\icon_7.png" />
+    <Content Include="images\manage\icon_8.png" />
+    <Content Include="images\manage\icon_8_hover.png" />
+    <Content Include="images\manage\icon_9.png" />
+    <Content Include="images\manage\icon_9_hover.png" />
+    <Content Include="images\manage\icon_more_sprend.png" />
+    <Content Include="images\manage\icon_more_sprend_hover.png" />
+    <Content Include="images\manage\icon_tranfer1.png" />
+    <Content Include="images\manage\icon_transfer_hover.png" />
+    <Content Include="images\manage\img_01.png" />
+    <Content Include="images\manage\img_02.png" />
+    <Content Include="images\manage\img_03.png" />
+    <Content Include="images\manage\img_04.png" />
+    <Content Include="images\manage\img_05.png" />
+    <Content Include="images\manage\img_051.png" />
+    <Content Include="images\manage\lark_white.png" />
+    <Content Include="images\manage\line.png" />
+    <Content Include="images\manage\logo.png" />
+    <Content Include="images\manage\miaoge.png" />
+    <Content Include="images\manage\nav_bg.png" />
+    <Content Include="images\manage\nav_bg_active.png" />
+    <Content Include="images\manage\next1.png" />
+    <Content Include="images\manage\next3.png" />
+    <Content Include="images\manage\people.png" />
+    <Content Include="images\manage\radio_btn.png" />
+    <Content Include="images\manage\radio_btn1.png" />
+    <Content Include="images\manage\search.png" />
+    <Content Include="images\manage\star1.png" />
+    <Content Include="images\manage\star2.png" />
+    <Content Include="images\manage\transfer0814.png" />
+    <Content Include="images\manage\transform.png" />
+    <Content Include="images\manage\transform0.png" />
+    <Content Include="images\mcloud\bb_s.png" />
+    <Content Include="images\mcloud\CLIP.jpg" />
+    <Content Include="images\mcloud\comment_3.png" />
+    <Content Include="images\mcloud\cut_1.png" />
+    <Content Include="images\mcloud\dot.png" />
+    <Content Include="images\mcloud\downarrow.png" />
+    <Content Include="images\mcloud\downarrow1.png" />
+    <Content Include="images\mcloud\duoping.png" />
+    <Content Include="images\mcloud\header_bg.jpg" />
+    <Content Include="images\mcloud\header_bg.png" />
+    <Content Include="images\mcloud\icon_01.png" />
+    <Content Include="images\mcloud\img1.jpg" />
+    <Content Include="images\mcloud\img2.jpg" />
+    <Content Include="images\mcloud\img3.jpg" />
+    <Content Include="images\mcloud\img4.jpg" />
+    <Content Include="images\mcloud\img5.jpg" />
+    <Content Include="images\mcloud\img_list_01.png" />
+    <Content Include="images\mcloud\img_list_02.png" />
+    <Content Include="images\mcloud\img_list_03.png" />
+    <Content Include="images\mcloud\img_list_04.png" />
+    <Content Include="images\mcloud\img_list_05.png" />
+    <Content Include="images\mcloud\loading.gif" />
+    <Content Include="images\mcloud\next.png" />
+    <Content Include="images\mcloud\prev.png" />
+    <Content Include="images\mcloud\storage_1.png" />
+    <Content Include="images\player\icon_01.png" />
+    <Content Include="images\player\icon_02.png" />
+    <Content Include="images\player\icon_03.png" />
+    <Content Include="images\player\icon_03_hover.png" />
+    <Content Include="images\player\player.png" />
+    <Content Include="images\taskmanage\chat.png" />
+    <Content Include="images\taskmanage\chat1.png" />
+    <Content Include="images\taskmanage\cut.png" />
+    <Content Include="images\taskmanage\cut1.png" />
+    <Content Include="images\taskmanage\delete.png" />
+    <Content Include="images\taskmanage\edit.png" />
+    <Content Include="images\taskmanage\ee.png" />
+    <Content Include="images\taskmanage\err.png" />
+    <Content Include="images\taskmanage\error1.png" />
+    <Content Include="images\taskmanage\fail1.png" />
+    <Content Include="images\taskmanage\fff.png" />
+    <Content Include="images\taskmanage\format_icon.png" />
+    <Content Include="images\taskmanage\format_icon_copy.png" />
+    <Content Include="images\taskmanage\left-hecheng1.png" />
+    <Content Include="images\taskmanage\left_chat.png" />
+    <Content Include="images\taskmanage\left_cut.png" />
+    <Content Include="images\taskmanage\left_hecheng.png" />
+    <Content Include="images\taskmanage\left_review.png" />
+    <Content Include="images\taskmanage\left_synthesis.png" />
+    <Content Include="images\taskmanage\left_transcode.png" />
+    <Content Include="images\taskmanage\left_zhuanma.png" />
+    <Content Include="images\taskmanage\now.png" />
+    <Content Include="images\taskmanage\now1.png" />
+    <Content Include="images\taskmanage\play.png" />
+    <Content Include="images\taskmanage\renewal.png" />
+    <Content Include="images\taskmanage\shengyue_enter.png" />
+    <Content Include="images\taskmanage\shengyue_music.png" />
+    <Content Include="images\taskmanage\shengyue_video.png" />
+    <Content Include="images\taskmanage\success1.png" />
+    <Content Include="images\taskmanage\transform.png" />
+    <Content Include="images\taskmanage\video.png" />
+    <Content Include="images\taskmanage\video2.png" />
+    <Content Include="images\taskmanage\video33.png" />
+    <Content Include="images\taskmanage\zhuanma1.png" />
+    <Content Include="images\user2\user2_03.jpg" />
+    <Content Include="images\user2\user2_07.jpg" />
+    <Content Include="images\user2\user2_09.jpg" />
+    <Content Include="images\user2\user2_11.jpg" />
+    <Content Include="images\user2\user2_13.jpg" />
+    <Content Include="images\user2\user2_16.jpg" />
+    <Content Include="images\user2\user2_19.jpg" />
+    <Content Include="images\usercenter\11.png" />
+    <Content Include="images\usercenter\22.png" />
+    <Content Include="images\usercenter\33.png" />
+    <Content Include="images\usercenter\button_cancel.png" />
+    <Content Include="images\usercenter\button_shutter.png" />
+    <Content Include="images\usercenter\button_shutter_disabled.png" />
+    <Content Include="images\usercenter\button_upload.png" />
+    <Content Include="images\usercenter\button_upload_disabled.png" />
+    <Content Include="images\usercenter\camera.png" />
+    <Content Include="images\usercenter\cancle.png" />
+    <Content Include="images\usercenter\file.png" />
+    <Content Include="images\usercenter\local.png" />
+    <Content Include="images\usercenter\local_hover.png" />
+    <Content Include="images\usercenter\notifier-loader-clean.gif" />
+    <Content Include="images\usercenter\photo.png" />
+    <Content Include="images\usercenter\photo_hover.png" />
+    <Content Include="images\usercenter\pool.jpg" />
+    <Content Include="images\usercenter\save.png" />
+    <Content Include="images\user\Button1.jpg" />
+    <Content Include="images\user\Button2.png" />
+    <Content Include="images\user\user_03.jpg" />
+    <Content Include="images\user\user_06.png" />
+    <Content Include="images\user\user_07.png" />
+    <Content Include="images\user\user_10.jpg" />
+    <Content Include="images\user\user_12.jpg" />
+    <Content Include="images\user\user_15.jpg" />
+    <Content Include="images\user\user_18.jpg" />
+    <Content Include="images\user\user_20.jpg" />
+    <Content Include="images\user\user_22.jpg" />
+    <Content Include="js\app.js" />
+    <Content Include="js\apps\clipreview\review_app.js" />
+    <Content Include="js\apps\clipreview\show\review_controller.js" />
+    <Content Include="js\apps\clipreview\show\review_view.js" />
+    <Content Include="js\apps\common\request.js" />
+    <Content Include="js\apps\common\utility.js" />
+    <Content Include="js\apps\common\views.js" />
+    <Content Include="js\apps\config\marionette\regions\dialog.js" />
+    <Content Include="js\apps\config\storage\localstorage.js" />
+    <Content Include="js\apps\cut\cut_app.js" />
+    <Content Include="js\apps\cut\show\cut_controller.js" />
+    <Content Include="js\apps\cut\show\cut_view.js" />
+    <Content Include="js\apps\login\login_app.js" />
+    <Content Include="js\apps\login\show\login_controller.js" />
+    <Content Include="js\apps\login\show\login_view.js" />
+    <Content Include="js\apps\mycloud\dialog\dialog_view.js" />
+    <Content Include="js\apps\mycloud\dialog\tree_view.js" />
+    <Content Include="js\apps\mycloud\list\list_controller.js" />
+    <Content Include="js\apps\mycloud\list\list_view.js" />
+    <Content Include="js\apps\mycloud\mycloud_app.js" />
+    <Content Include="js\apps\taskmanage\show\task_controller.js" />
+    <Content Include="js\apps\taskmanage\show\task_view.js" />
+    <Content Include="js\apps\taskmanage\taskmanage_app.js" />
+    <Content Include="js\apps\usercenter\show\usercenter_controller.js" />
+    <Content Include="js\apps\usercenter\show\usercenter_view.js" />
+    <Content Include="js\apps\usercenter\usercenter_app.js" />
+    <Content Include="js\build.js" />
+    <Content Include="js\entities\clipreview\comment.js" />
+    <Content Include="js\entities\clipreview\review.js" />
+    <Content Include="js\entities\common.js" />
+    <Content Include="js\entities\cut\activity.js" />
+    <Content Include="js\entities\cut\fragment.js" />
+    <Content Include="js\entities\login\loginModel.js" />
+    <Content Include="js\entities\mycloud\createClipDes.js" />
+    <Content Include="js\entities\mycloud\leftnavList.js" />
+    <Content Include="js\entities\mycloud\materialCollection.js" />
+    <Content Include="js\entities\mycloud\materialModel.js" />
+    <Content Include="js\entities\mycloud\siderbarList.js" />
+    <Content Include="js\entities\mycloud\topnavList.js" />
+    <Content Include="js\entities\taskmanage\leftnavList.js" />
+    <Content Include="js\entities\taskmanage\taskCollection.js" />
+    <Content Include="js\entities\taskmanage\taskModel.js" />
+    <Content Include="js\entities\usercenter\leftnavList.js" />
+    <Content Include="js\entities\usercenter\usercenterModel.js" />
+    <Content Include="js\libs\almond.js" />
+    <Content Include="js\libs\backbone-validation-amd.js" />
+    <Content Include="js\libs\backbone.js" />
+    <Content Include="js\libs\backbone.localStorage.js" />
+    <Content Include="js\libs\backbone.marionette.js" />
+    <Content Include="js\libs\backbone.marionette.modals.js" />
+    <Content Include="js\libs\backbone.modal.js" />
+    <Content Include="js\libs\backbone.notifier.js" />
+    <Content Include="js\libs\backbone.notifier.view.js" />
+    <Content Include="js\libs\backbone.paginator.js" />
+    <Content Include="js\libs\backbone.picky.js" />
+    <Content Include="js\libs\backbone.syphon.js" />
+    <Content Include="js\libs\backgrid-paginator.js" />
+    <Content Include="js\libs\bootstrap.js" />
+    <Content Include="js\libs\css.js" />
+    <Content Include="js\libs\css.min.js" />
+    <Content Include="js\libs\domReady.js" />
+    <Content Include="js\libs\dropzone-amd-module.js" />
+    <Content Include="js\libs\handlebars.js" />
+    <Content Include="js\libs\jquery-1.7.2.min.js" />
+    <Content Include="js\libs\jquery-1.8.3.min.js" />
+    <Content Include="js\libs\jquery-ui.js" />
+    <Content Include="js\libs\jQuery.Cookie.js" />
+    <Content Include="js\libs\jQuery.dialog.js" />
+    <Content Include="js\libs\jQuery.Drag.js" />
+    <Content Include="js\libs\jquery.flexslider-min.js" />
+    <Content Include="js\libs\jquery.Jcrop.min.js" />
+    <Content Include="js\libs\jquery.js" />
+    <Content Include="js\libs\jquery.mCustomScrollbar.concat.min.js" />
+    <Content Include="js\libs\jquery.nanoscroller.min.js" />
+    <Content Include="js\libs\jQuery.Resize.js" />
+    <Content Include="js\libs\jquery.spin.js" />
+    <Content Include="js\libs\jquery.tooltipster.min.js" />
+    <Content Include="js\libs\jquery.validationEngine-zh.js" />
+    <Content Include="js\libs\jquery.validationEngine.js" />
+    <Content Include="js\libs\normalize.js" />
+    <Content Include="js\libs\require.js" />
+    <Content Include="js\libs\spin.js" />
+    <Content Include="js\libs\spin.min.js" />
+    <Content Include="js\libs\text.js" />
+    <Content Include="js\libs\underscore.js" />
+    <Content Include="js\libs\video.js" />
+    <Content Include="js\libs\wPaint\libs\jquery.ui.core.1.10.3.min.js" />
+    <Content Include="js\libs\wPaint\libs\jquery.ui.draggable.1.10.3.min.js" />
+    <Content Include="js\libs\wPaint\libs\jquery.ui.mouse.1.10.3.min.js" />
+    <Content Include="js\libs\wPaint\libs\jquery.ui.widget.1.10.3.min.js" />
+    <Content Include="js\libs\wPaint\libs\wColorPicker.min.css" />
+    <Content Include="js\libs\wPaint\libs\wColorPicker.min.js" />
+    <Content Include="js\libs\wPaint\plugins\file\img\icons-menu-main-file.png" />
+    <Content Include="js\libs\wPaint\plugins\file\src\wPaint.menu.main.file.js" />
+    <Content Include="js\libs\wPaint\plugins\file\wPaint.menu.main.file.min.js" />
+    <Content Include="js\libs\wPaint\plugins\main\img\cursor-bucket.png" />
+    <Content Include="js\libs\wPaint\plugins\main\img\cursor-crosshair.png" />
+    <Content Include="js\libs\wPaint\plugins\main\img\cursor-dropper.png" />
+    <Content Include="js\libs\wPaint\plugins\main\img\cursor-eraser1.png" />
+    <Content Include="js\libs\wPaint\plugins\main\img\cursor-eraser10.png" />
+    <Content Include="js\libs\wPaint\plugins\main\img\cursor-eraser2.png" />
+    <Content Include="js\libs\wPaint\plugins\main\img\cursor-eraser3.png" />
+    <Content Include="js\libs\wPaint\plugins\main\img\cursor-eraser4.png" />
+    <Content Include="js\libs\wPaint\plugins\main\img\cursor-eraser5.png" />
+    <Content Include="js\libs\wPaint\plugins\main\img\cursor-eraser6.png" />
+    <Content Include="js\libs\wPaint\plugins\main\img\cursor-eraser7.png" />
+    <Content Include="js\libs\wPaint\plugins\main\img\cursor-eraser8.png" />
+    <Content Include="js\libs\wPaint\plugins\main\img\cursor-eraser9.png" />
+    <Content Include="js\libs\wPaint\plugins\main\img\cursor-pencil.png" />
+    <Content Include="js\libs\wPaint\plugins\main\img\icon-group-arrow.png" />
+    <Content Include="js\libs\wPaint\plugins\main\img\icons-menu-main.png" />
+    <Content Include="js\libs\wPaint\plugins\main\src\fillArea.min.js" />
+    <Content Include="js\libs\wPaint\plugins\main\src\wPaint.menu.main.js" />
+    <Content Include="js\libs\wPaint\plugins\main\wPaint.menu.main.min.js" />
+    <Content Include="js\libs\wPaint\plugins\shapes\img\icons-menu-main-shapes.png" />
+    <Content Include="js\libs\wPaint\plugins\shapes\src\shapes.min.js" />
+    <Content Include="js\libs\wPaint\plugins\shapes\src\wPaint.menu.main.shapes.js" />
+    <Content Include="js\libs\wPaint\plugins\shapes\wPaint.menu.main.shapes.min.js" />
+    <Content Include="js\libs\wPaint\plugins\text\img\icons-menu-text.png" />
+    <Content Include="js\libs\wPaint\plugins\text\src\wPaint.menu.text.js" />
+    <Content Include="js\libs\wPaint\plugins\text\wPaint.menu.text.min.js" />
+    <Content Include="js\libs\wPaint\wPaint.min.css" />
+    <Content Include="js\libs\wPaint\wPaint.min.js" />
+    <Content Include="js\libs\zClip.js" />
+    <Content Include="js\libs\ZeroClipboard.swf" />
+    <Content Include="js\main.js" />
+    <Content Include="js\utils\backbone.sync.custom.js" />
+    <Content Include="js\utils\fullAvatarEditor\crossdomain.xml" />
+    <Content Include="js\utils\fullAvatarEditor\expressInstall.swf" />
+    <Content Include="js\utils\fullAvatarEditor\fullAvatarEditor.swf" />
+    <Content Include="js\utils\fullAvatarEditor\scripts\fullAvatarEditor.js" />
+    <Content Include="js\utils\fullAvatarEditor\scripts\swfobject.js" />
+    <Content Include="js\utils\handlebars-helper.js" />
+    <Content Include="js\utils\marionette.templateCache.js" />
+    <Content Include="js\utils\mouseselect.html" />
+    <Content Include="js\utils\NotifierHelper.js" />
+    <Content Include="js\utils\SbVideo.js" />
+    <Content Include="js\utils\selected-all-helper.js" />
+    <Content Include="js\utils\templates.js" />
+    <Content Include="js\utils\timecode.js" />
+    <Content Include="js\utils\timecodeconvert.js" />
+    <Content Include="js\utils\timeline.js" />
+    <Content Include="js\utils\validateUser.js" />
+    <Content Include="js\utils\VideoFrame.js" />
+    <Content Include="js\vent.js" />
+    <Content Include="loading.html" />
+    <Content Include="login.html" />
+    <Content Include="myspace.html" />
+    <Content Include="register.html" />
+    <Content Include="task.html" />
+    <Content Include="templates\clipreview\review-comment-itemview.html" />
+    <Content Include="templates\clipreview\review-content-layout.html" />
+    <Content Include="templates\clipreview\review-content-left.html" />
+    <Content Include="templates\clipreview\review-content-right.html" />
+    <Content Include="templates\clipreview\review-footer-center-featurebar.html" />
+    <Content Include="templates\clipreview\review-footer-featurebar.html" />
+    <Content Include="templates\clipreview\review-footer-left-featurebar.html" />
+    <Content Include="templates\clipreview\review-footer-right-featurebar.html" />
+    <Content Include="templates\clipreview\review-footer-timeline.html" />
+    <Content Include="templates\clipreview\review-footer.html" />
+    <Content Include="templates\clipreview\review-header.html" />
+    <Content Include="templates\clipreview\review-main-layout.html" />
+    <Content Include="templates\clipreview\reviewt-content-layout.html" />
+    <Content Include="templates\common\mycloud-pager-layout.html" />
+    <Content Include="templates\common\mycloud-pagination-control.html" />
+    <Content Include="templates\common\nopermission_401.html" />
+    <Content Include="templates\common\notfind_404.html" />
+    <Content Include="templates\cut\cut-content-layout.html" />
+    <Content Include="templates\cut\cut-content-left.html" />
+    <Content Include="templates\cut\cut-content-right.html" />
+    <Content Include="templates\cut\cut-footer-center-featurebar.html" />
+    <Content Include="templates\cut\cut-footer-featurebar.html" />
+    <Content Include="templates\cut\cut-footer-left-featurebar.html" />
+    <Content Include="templates\cut\cut-footer-right-featurebar.html" />
+    <Content Include="templates\cut\cut-footer-timeline.html" />
+    <Content Include="templates\cut\cut-footer.html" />
+    <Content Include="templates\cut\cut-fragment-itemview.html" />
+    <Content Include="templates\cut\cut-header.html" />
+    <Content Include="templates\cut\cut-main-layout.html" />
+    <Content Include="templates\cut\Layout.html" />
+    <Content Include="templates\desc\desc.html" />
+    <Content Include="templates\header\mycloud-header.html" />
+    <Content Include="templates\header\usercenter-header.html" />
+    <Content Include="templates\login\forget-firststep.html" />
+    <Content Include="templates\login\forget-laststep.html" />
+    <Content Include="templates\login\forget-secondstep.html" />
+    <Content Include="templates\login\forget-thirdstep.html" />
+    <Content Include="templates\login\login-content.html" />
+    <Content Include="templates\login\register-content.html" />
+    <Content Include="templates\login\register-header.html" />
+    <Content Include="templates\login\register-layout.html" />
+    <Content Include="templates\mycloud\mycloud-detail-layout.html" />
+    <Content Include="templates\mycloud\mycloud-dialog-cutform.html" />
+    <Content Include="templates\mycloud\mycloud-dialog-downloadform.html" />
+    <Content Include="templates\mycloud\mycloud-dialog-editform.html" />
+    <Content Include="templates\mycloud\mycloud-dialog-movetoform-file.html" />
+    <Content Include="templates\mycloud\mycloud-dialog-movetoform.html" />
+    <Content Include="templates\mycloud\mycloud-dialog-other.html" />
+    <Content Include="templates\mycloud\mycloud-dialog-player.html" />
+    <Content Include="templates\mycloud\mycloud-dialog-tooltipform.html" />
+    <Content Include="templates\mycloud\mycloud-dialog-transform.html" />
+    <Content Include="templates\mycloud\mycloud-dialog-transformdownload.html" />
+    <Content Include="templates\mycloud\mycloud-foldernav-item.html" />
+    <Content Include="templates\mycloud\mycloud-foldernav-list.html" />
+    <Content Include="templates\mycloud\mycloud-list-none.html" />
+    <Content Include="templates\mycloud\mycloud-list.html" />
+    <Content Include="templates\mycloud\mycloud-loading-view.html" />
+    <Content Include="templates\mycloud\mycloud-main-layout.html" />
+    <Content Include="templates\mycloud\mycloud-material-defaultItem.html" />
+    <Content Include="templates\mycloud\mycloud-material-folderItem.html" />
+    <Content Include="templates\mycloud\mycloud-material-item.html" />
+    <Content Include="templates\mycloud\mycloud-material-list.html" />
+    <Content Include="templates\mycloud\mycloud-material-mediaitem.html" />
+    <Content Include="templates\mycloud\mycloud-material-otherItem.html" />
+    <Content Include="templates\mycloud\mycloud-nav-item.html" />
+    <Content Include="templates\mycloud\mycloud-nav-list.html" />
+    <Content Include="templates\mycloud\mycloud-right-layout.html" />
+    <Content Include="templates\mycloud\mycloud-siderbar-item.html" />
+    <Content Include="templates\mycloud\mycloud-topnav-item.html" />
+    <Content Include="templates\mycloud\mycloud-topnav.html" />
+    <Content Include="templates\mycloud\mycloud-whole-layout.html" />
+    <Content Include="templates\taskmanage\task-cut-item.html" />
+    <Content Include="templates\taskmanage\task-pager-layout.html" />
+    <Content Include="templates\taskmanage\task-panel-item.html" />
+    <Content Include="templates\taskmanage\task-review-item.html" />
+    <Content Include="templates\taskmanage\task-synthesis-item.html" />
+    <Content Include="templates\taskmanage\task-transcode-item.html" />
+    <Content Include="templates\usercenter\usercenter-changehead-item.html" />
+    <Content Include="templates\usercenter\usercenter-changepsw-item.html" />
+    <Content Include="templates\usercenter\usercenter-currentrate-item.html" />
+    <Content Include="templates\usercenter\usercenter-detail-item.html" />
+    <Content Include="templates\usercenter\usercenter-dosage-bottomitem.html" />
+    <Content Include="templates\usercenter\usercenter-dosage-item.html" />
+    <Content Include="templates\usercenter\usercenter-dosage-layout.html" />
+    <Content Include="templates\usercenter\usercenter-dosage-topitem.html" />
+    <Content Include="templates\usercenter\usercenter-selectrate-item.html" />
+    <Content Include="test\dev.html" />
+    <Content Include="test\fullscreen.html" />
+    <Content Include="test\uploads\bg-img.jpg" />
+    <Content Include="test\uploads\test1.png" />
+    <Content Include="test\uploads\test2.png" />
+    <Content Include="test\uploads\test3.png" />
+    <Content Include="test\uploads\wPaint-2.png" />
+    <Content Include="test\uploads\wPaint-5451f1ff0ecee.png" />
+    <Content Include="test\uploads\wPaint-5451f2338a4d1.png" />
+    <Content Include="test\uploads\wPaint-5451f2d406016.png" />
+    <Content Include="test\uploads\wPaint-5451f2d7146db.png" />
+    <Content Include="test\uploads\wPaint-5451f2e03f6d6.png" />
+    <Content Include="test\uploads\wPaint-54520151b8ece.png" />
+    <Content Include="test\uploads\wPaint-545209c079f56.png" />
+    <Content Include="test\uploads\wPaint-54520a0eb71da.png" />
+    <Content Include="test\uploads\wPaint-54520a7e78170.png" />
+    <Content Include="test\uploads\wPaint-54520a8091baa.png" />
+    <Content Include="test\uploads\wPaint-54520b56292ce.png" />
+    <Content Include="test\uploads\wPaint-54520b60ce9b7.png" />
+    <Content Include="test\uploads\wPaint-5452f20207171.png" />
+    <Content Include="test\uploads\wPaint-5452f20b53a2b.png" />
+    <Content Include="test\uploads\wPaint.png" />
+    <Content Include="user.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="js\apps\usercenter\show\usercenter_view.js.bak" />
+    <Content Include="js\libs\wPaint\libs\mixins.styl" />
+    <Content Include="test\upload.php" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52307</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:52307/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

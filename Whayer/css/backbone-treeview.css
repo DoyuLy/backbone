@@ -1,0 +1,71 @@
+li
+{
+    list-style-type: none;
+}
+
+ul.node-tree
+{
+    /*padding-left: 5px;*/
+}
+
+ul.node-tree li
+{
+    /*border-left: 1px solid gray;*/
+    padding-left: 20px;
+    background:#fff;
+    /*background:url("../images/manage/file.png") no-repeat scroll 25px 10px ;*/
+}
+
+.treeview-ic{
+     background:url("../images/manage/folders-icon.png") no-repeat scroll;
+     background-size: 20px 20px;
+     margin-left: 10px;
+    display: inline-block;
+    width: 24px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+
+.node-label{
+   color:#575656;
+   /*font-family:Microsoft YaHei;*/
+   font:bold 14px/41px Microsoft YaHei;
+}
+
+/* This combination enables a border that extends to the correct location
+   and looks nice */
+ul.node-tree li.last-item
+{
+    border-left-color: transparent;
+}
+ul.node-tree li.dummy-item
+{
+    height: 0.75em;
+    margin-bottom: -0.75em;
+}
+
+.icon-plus{
+    background: url("../images/manage/icon-plus.png") no-repeat scroll center center;
+    margin-right: 0;
+    background-size:10px 10px;
+    /*border: 1px solid #aaa;
+    border-radius: 50%;*/
+    cursor: pointer;
+}
+.icon-minus{
+    background: url("../images/manage/icon-minus.png") no-repeat scroll center center;
+    margin-right: 0;
+    background-size:10px 10px;
+    /*border: 1px solid #aaa;
+    border-radius: 50%;*/
+    cursor: pointer;
+     cursor:pointer;
+}
+
+.node-active{
+    display:inherit;
+    line-height:41px;
+	background: rgba(13, 191, 216, 0.90);
+	position: relative;
+}

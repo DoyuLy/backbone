@@ -1,0 +1,69 @@
+﻿<span class="-tm-transform-name -tm-name  -tm-cut-left">
+    <p>
+        {{#if entityName}}
+            {{entityName}}
+        {{/if}}
+        {{#unless entityName}}
+            unknow
+        {{/unless}}
+    </p>
+    <i>{{createTime}}</i>
+</span>
+<span class="-tm-dl">
+    <dl class="-tm-cut-form">
+        <dt class="transform_{{sourceFileType}} -tm-form code-rate">
+            {{#if sourceFileType}}
+            {{sourceFileType}}
+            {{/if}}
+            {{#unless sourceFileType}}
+            未知
+            {{/unless}}
+        </dt>
+        <dt class="-tm-size code-rate">{{sourceImageWidth}}*{{sourceImageHeight}}</dt>
+        <dt class="trans-arrow code-rate"></dt>
+        <dt class="transform_{{targetFileType}} -tm-mav code-rate">
+            {{#if targetFileType}}
+            {{targetFileType}}
+            {{/if}}
+            {{#unless targetFileType}}
+            未知
+            {{/unless}}
+        </dt>
+        <dt class="-tm-size code-rate">{{targetImageWidth}}*{{targetImageHeight}}</dt>
+    </dl>
+</span>
+
+<span class="-tm-transform-time -tm-time">
+    {{duration}}
+</span>
+<span class="-tm-time -tm-transform-size">
+    {{#equal status 2}}
+    {{fileSize}}M
+    {{/equal}}
+</span>
+<span class="-tm-time -tm-part">
+    {{#equal status 1}}
+    <img src="images/taskmanage/success1.png" />转码完成
+    {{/equal}}
+    {{#equal status 0}}
+    <img src="images/taskmanage/now1.png" />正在转码
+    {{/equal}}
+    {{#equal status -1}}
+    <img src="images/taskmanage/fail1.png" />转码失败
+    {{/equal}}
+</span>
+<div class="-tm-hide">
+    <ul>
+        {{#equal status 1}}
+        <li class="download2 js-download" title="转码下载"></li>
+        <li class="delete js-delete" title="删除"></li>
+        {{/equal}}
+        {{#equal status 0}}
+        {{/equal}}
+        {{#equal status -1}}
+        <li class="error js-error" title="错误信息"></li>
+        <li class="renewal js-renewal" title="重新转码"></li>
+        <li class="delete js-delete" title="删除"></li>
+        {{/equal}}
+    </ul>
+</div>

@@ -1,0 +1,43 @@
+﻿<span class="-tm-transform-name -tm-name -tm-cut-left">
+    <p>{{taskName}}</p>
+    <i>{{createTime}}</i>
+</span>
+<!--<span class="-tm-dl">
+    <dl class="-tm-cut-form"></dl>
+</span>-->
+
+<span class="-tm-transform-time1 -tm-time">{{duration}}</span>
+<span class="-tm-time -tm-transform-size1">
+    {{#equal status 1}}
+        {{fileSize}}
+    {{/equal}}
+</span>
+<span class="-tm-time -tm-part">
+    {{!-- // status  0：失败; 1:执行中; 2：完成--}}
+    {{#equal status 1}}
+    <img src="images/taskmanage/success1.png" />合成成功
+    {{/equal }}
+    {{#equal status 0}}
+    <img src="images/taskmanage/now1.png" />正在合成
+    {{/equal}}
+    {{#equal status -1}}
+    <img src="images/taskmanage/fail1.png" />合成失败
+    {{/equal}}
+</span>
+
+<div class="-tm-hide">
+    <ul>
+        {{#equal status 1}}
+        <li class="download js-review" title="预览"></li>
+        <li class="delete js-delete" title="删除"></li>
+        {{/equal}}
+        {{#equal status 0}}
+        {{/equal}}
+        {{#equal status -1}}
+        <li class="error js-error" title="错误信息"></li>
+        <li class="renewal js-redo" title="重新合成"></li>
+        <li class="delete js-delete" title="删除"></li>
+        {{/equal}}
+    </ul>
+</div>
+

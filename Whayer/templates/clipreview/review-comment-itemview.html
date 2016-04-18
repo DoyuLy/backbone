@@ -1,0 +1,38 @@
+﻿<div class="js-theme" data-id="{{id}}" data-parentid="{{parentId}}" data-activityid="{{activityId}}">
+    <div class="own">
+        <span class="own_img"><img src="{{headerUrl}}" onerror="javascript:this.src='./images/mcloud/bb_s.png'" width="100%" height="100%" /></span>
+        <div class="usersay uy">
+            <span class="user">{{creatorCode}}</span>
+            <span class="time">{{pointTime}}</span>
+            <p class="alltime">{{createTime}}</p>
+        </div>
+    </div>
+    <div class="c_content">
+        <img class="img" src="{{keyframePath}}" width="68" height="37" />
+        <span>{{content}}</span>
+    </div>
+</div>
+<div class="js-reply">
+  
+    {{#each subItems}}
+        <div class="own own2">
+            <span class="own_img"><img src="{{headerUrl}}" onerror="javascript:this.src='./images/mcloud/bb_s.png'" width="100%" height="100%" /></span>
+            <div class="usersay uy">
+                <span class="user">{{creatorCode}}</span>
+                <span class="time">{{pointTime}}</span>
+                <p class="alltime">{{createTime}}</p>
+            </div>
+        </div>
+        <div class="c_content">
+            <img class="img" src="{{keyframePath}}" width="68" height="37" />
+            <span>{{content}}</span>
+        </div>
+    {{/each}}
+
+</div>
+<div class="reply">
+    <div class="retop">
+        <input class="input" placeholder="输入回复" />
+        <img src="./images/desc/micro.png" class="replybtn js-replay" data-id="{{id}}" data-parentid="{{parentId}}" data-activityid="{{activityId}}" data-point="{{point}}" alt="" />
+    </div>
+</div>

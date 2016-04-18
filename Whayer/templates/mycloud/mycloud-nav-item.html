@@ -1,0 +1,10 @@
+﻿    {{!--
+    <a href="#{{prefix}}/{{router}}" title="{{title}}">
+    --}}
+    <a href="javascript:void(0)" title="{{title}}">
+        {{#if imgUrl}}
+        <img src="{{imgUrl}}" alt="">{{title}}
+        {{else}}
+        <span class="title">{{title}}</span>
+        {{/if}}
+    </a>

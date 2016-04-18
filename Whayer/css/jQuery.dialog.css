@@ -1,0 +1,82 @@
+/*
+-------------------------------------------
+	Style for jQuery plugin : Dialog
+-------------------------------------------
+*/
+.jQ_Dialog{background:#fff;-moz-box-shadow:0px 2px 20px #60a9e1; -webkit-box-shadow:0px 2px 20px #60a9e1;box-shadow:0px 2px 20px #60a9e1;min-width:100px;table-layout: fixed;WORD-BREAK: break-all; WORD-WRAP: break-word}
+.jQ_Dialog.NotOnTop{
+ -khtml-opacity:.70; 
+ -moz-opacity:.70; 
+ -ms-filter:"alpha(opacity=70)";
+  filter:alpha(opacity=70);
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.7);
+  opacity:.70; 
+}
+.jQ_Dialog_MaskLayer{position:fixed;width:100%;height:100%;top:0;left:0}
+.jQ_Dialog_Title,
+.jQ_Dialog_Title a,
+.jQ_Dialog_X,
+.jQ_Dialog_Footer,
+.jQ_Dialog_Button a{background:url(/images/jQuery.Dialog/RepeatX.png);height:36px;text-align:left}
+.jQ_Dialog_X a,
+.jQ_Dialog_Resizer,
+.jQ_Dialog_Header_Left,
+.jQ_Dialog_Header_Right,
+.jQ_Dialog_Footer_Left,
+.jQ_Dialog_Footer_Right{width:11px;background:url(/images/jQuery.Dialog/Sprite.png) no-repeat}
+.jQ_Dialog_Title a,
+.jQ_Dialog_X a,
+.jQ_Dialog_Button a{text-decoration:none;outline:none;-moz-outline:none;color:#000}
+.jQ_Dialog_Header_Right{background-position:-11px 0}
+.jQ_Dialog_X{padding-left:12px}
+.jQ_Dialog_X a{background-position:0 -74px;display:block;width:20px;height:20px;overflow:hidden;float:right}
+.jQ_Dialog_X a:hover{ background-position:0 -89px}
+.jQ_Dialog_Title a{background-position:0 -74px;float:left;height:28px;line-height:28px;padding:0 18px;margin:7px 0 0 8px;border:1px solid #62abe1;border-bottom:0;border-radius:5px 5px 0 0;-webkit-border-radius:5px 5px 0 0;-moz-border-radius:5px 5px 0 0;text-align:center}
+.jQ_Dialog_Title a.Current,
+.jQ_Dialog_Title a:hover{background-position:0 -102px;}
+.jQ_Dialog_Title span{float:left;line-height:36px;}
+.jQ_Dialog_Title b{font-weight:normal}
+.jQ_Dialog_Body{width:100%;height:100%}
+.jQ_Dialog_Body_Left,
+.jQ_Dialog_Body_Right{background:url(/images/jQuery.Dialog/RepeatY.png) repeat-y;width:11px}
+.jQ_Dialog_Body_Right{background-position:-11px 0}
+.jQ_Dialog_Content{vertical-align:top;height:100%}
+.jQ_Dialog_Content.Loading{background:url(/images/jQuery.Dialog/loading.gif) center center no-repeat;width:158px;height:35px;text-align:center}
+.jQ_Dialog_Footer{background-position:0 -36px;height:12px;font-size:12px}
+.jQ_Dialog_Footer_Left{background-position:0 -36px;}
+.jQ_Dialog_Footer_Right{background-position:-11px -36px;vertical-align:bottom}
+.jQ_Dialog_Footer b{font-weight:normal}
+.jQ_Dialog_Footer_Left.HasTimer{background-position:0 -48px}
+.jQ_Dialog_Footer.HasTimer{background-position:0 -48px;height:26px;text-align:center;color:#2b5d8a}
+.jQ_Dialog_Footer_Right.HasTimer{background-position:-11px -48px}
+.jQ_Dialog_Button td{background:#fff url(/images/jQuery.Dialog/NoRepeat.png) 0 100% repeat-x;text-align:right;padding-right:8px;height:42px;}
+.jQ_Dialog_Button a{
+    background-position:0 -130px;
+    padding:0 16px;
+    border:1px solid #85caef;
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    display: -moz-inline-stack;  /*Firefox*/
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    height: 26px;
+    line-height:26px;
+    margin-left:8px;
+}
+.jQ_Dialog_Button a:hover{background-position:0 -156px;border-color:#58a7d1;color:#000}
+.jQ_Dialog_Button a:active{background-position:0 -182px;border-color:#ff9900}
+.jQ_Dialog_Button a.Disabled{background-position:0 -208px;border-color:#ccc;color:#888;text-shadow:1px 1px 1px #fff;}
+.jQ_Dialog_Resizer{display:none;width:8px;height:11px;background-position:0 -109px;background-repeat:no-repeat;overflow:hidden}
+.jQ_Dialog_Icon {display:none;width:56px}
+.jQ_Dialog_Icon .Error,
+.jQ_Dialog_Icon .Success,
+.jQ_Dialog_Icon .Warning,
+.jQ_Dialog_Icon .Question,
+.jQ_Dialog_Icon .Exception{height:64px;background:url(/images/jQuery.Dialog/Icons/Error.png) 8px center no-repeat}
+.jQ_Dialog_Icon .Success{background-image:url(/images/jQuery.Dialog/Icons/Success.png)}
+.jQ_Dialog_Icon .Warning{background-image:url(/images/jQuery.Dialog/Icons/Warning.png)}
+.jQ_Dialog_Icon .Question{background-image:url(/images/jQuery.Dialog/Icons/Question.png)}
+.jQ_Dialog_Icon .Exception{background-image:url(/images/jQuery.Dialog/Icons/Exception.png)}
+.HasIcon .jQ_Dialog_Content{vertical-align:middle}

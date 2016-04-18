@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="css/reset-min.css">
+    <link type="text/css" rel="stylesheet" href="css/base-min.css">
+    <link href="css/manage.css" rel="stylesheet" />
+</head>
+<body style="background: #292929;">
+    <!--头部-->
+    <div class="header">
+        <div>
+            <div class="logo"></div>
+            <div class=" -us-loginbox">
+                <div class="info">
+                    <span></span>
+                    <a href="#">个人中心</a>
+                    <i></i>
+                </div>
+                <a class="people l"></a>
+            </div>
+        </div>
+    </div>
+    <div class="-uc-main">
+        <div>            
+            <!--内容左边-->
+            <div class="-uc-left leftnav-region">
+                <div>
+                    <ul class="nav">
+                        <li><a href="#nav/All" title="全部文件"><img src="images/manage/avatar.png" alt="">个人中心</a></li>
+                        <li class="active" style="background: rgb(41, 41, 41);"><a href="#nav/Clip" class="-uc-center" title="视音频">个人详细信息</a></li>
+                        <li><a class="-uc-center" href="" title="">修改密码</a></li>
+                        <li><a class="-uc-center" href="#nav/Picture" title="图片">当前资费</a></li>
+                        <li><a class="-uc-center" href="#nav/Document" title="文档">用量</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--内容右边-->
+            <div class="-uc-right right-region">
+
+                <div class="-uc-details fix">
+
+
+                        <!----------------------个人详细信息------------------------->
+                        <!--<h3>个人详细信息</h3>
+                        <div class="content">
+                            <ul class="-uc-detail">
+                                <li><span>真实姓名</span><input type="text" placeholder="请填写您的真实姓名" /><i>*</i></li>
+                                <li><span>联系电话</span><input type="text" placeholder="请填写您的有效联系方式" /><i>*</i></li>
+                                <li><span>邮箱</span><input type="text" placeholder="请填写您的邮箱地址" /><i>*</i></li>
+                                <li><span>邮编</span><input type="text" placeholder="请填写您的邮编" /><i>*</i></li>
+                                <li><span>性别</span>
+                                    <span class="check active" data-format="NetWorkFormat"></span><b class="sex">男</b>
+                                    <span class="check" data-format="ProfessionalFormat"></span><b class="sex">女</b>
+                                </li>
+                                <li><span>职业</span><span class="nature">学生</span><a href="#">修改</a><i>*</i></li>
+                                <li><span>通讯地址</span>
+                                    <input class="province le" type="text" placeholder="省/直辖市/自治区" />
+                                    <div class="triangle"><span class="triangle-up">▲</span><span class="triangle-up triangle-down">▼</span></div>
+                                    <input class="province re" type="text" placeholder="市/区" />
+                                    <div class="city"><span class="triangle-up">▲</span><span class="triangle-up triangle-down">▼</span></div>
+                                    <i>*</i>
+                                    <input class="add-detail" type="text" />
+                                </li>
+                                <li><span class="remarks">备注</span><textarea></textarea></li>
+                                <li><span></span><input class="creation my f18 wf" id="wf" type="button" value="保 存"></li>
+                            </ul>
+                        </div>-->
+                        <!----------------------修改密码------------------------->
+                        <!--<h3>修改密码</h3>
+                        <div class="content">
+                            <ul class="-uc-detail">
+                                <li><span class="personal">旧密码</span><input type="text" placeholder="请填写您的旧密码" /></li>
+                                <li><span class="personal">新密码</span><input type="text" placeholder="请填写新密码" /></li>
+                                <li><span class="personal">再次输入密码</span><input type="text" placeholder="请再次输入新密码" /></li>
+                                
+                                <li><span></span><input class="creation my f18 wf" id="wf" type="button" value="重置密码"></li>
+                            </ul>
+                        </div>-->
+                        <!----------------------选择资费类型------------------------->
+                        <h3>选择资费类型 > <a href="#">付费</a></h3>
+                        <div class="content">
+                            <p class="choice-cost">请从以下资费中选择适合你的资费方案：</p>
+
+                            <ul class="-uc-cf fix">
+                                <li>
+                                    <span class="type">免费版</span>
+                                    <span class="cost gratis">免费版<sup>1</sup></span>
+                                    <dl>
+                                        <dt>5GB</dt>
+                                        <dd>▶ HTTP上传</dd>
+                                        <dd>▶ 支持移动端</dd>
+                                        <dd>▶ 支持10个Show</dd>
+                                        <dd>▶ 支持与秒鸽对接</dd>
+                                    </dl>
+                                    <div class="btn"><button>修改资费</button></div>
+                                </li>
+                                <li>
+                                    <span class="type">高级版</span>
+                                    <span class="cost">费用待定</span>
+                                    <dl>
+                                        <dt>50GB</dt>
+                                        <dd>▶ 上传客户端</dd>
+                                        <dd>▶ 支持移动端</dd>
+                                        <dd>▶ 支持50个Show</dd>
+                                        <dd>▶ 支持与秒鸽对接</dd>
+                                    </dl>
+                                    <div class="btn"><button>修改资费</button></div>
+                                </li>
+                                <li>
+                                    <span class="type">专业版</span>
+                                    <span class="cost">费用待定</span>
+                                    <dl>
+                                        <dt>150GB</dt>
+                                        <dd>▶ 上传客户端</dd>
+                                        <dd>▶ 支持移动端</dd>
+                                        <dd>▶ 支持100个Show</dd>
+                                        <dd>▶ 支持与秒鸽对接</dd>
+                                        <dd>▶ 支持与电视台内容中心对接</dd>
+                                    </dl>
+                                    <div class="btn"><button class="tariff">当前资费</button></div>
+                                </li>
+                                <li class="last">
+                                    <h2 class="custom">私人定制</h2>
+                                    <p>想要更大容量？更个性化的功能？我们为你准备了定制方案。</p>
+                                    <div class="btn"><button>私人订制</button></div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!----------------------当前资费------------------------->
+                        <!--<h3>当前资费</h3>
+                        <div class="content">
+                            <ul class="-uc-detail">
+                                <li><span class="personal">付费人</span><span class="-uc-size">admin</span></li>
+                                <li><span class="personal">付费方案</span><span class="-uc-size">个人专业版</span><a href="#">修改资费</a></li>
+                                <li><span class="-uc-cf-cost personal">费用简介</span>
+                                    <span class="cost-profile">
+                                            <ul>
+                                                <li>150G存储容量</li>
+                                                <li>支持上传客户端</li>
+                                                <li>支持移动端</li>
+                                                <li>支持100个Show</li>
+                                                <li>支持与妙鸽对接</li>
+                                                <li>支持与电视台中心对接</li>
+                                            </ul>
+                                        </span>
+                                </li>
+
+                            </ul>
+                        </div>-->
+                        <!----------------------用量------------------------->
+                        <!--<h3>空间存储  <span>56GB/150GB</span></h3>
+                        <div class="content">
+                            <ul class="-uc-consumption">
+                                <li><span>视频</span><span>共23个</span><span class="-uc-size">40G</span></li>
+                                <li><span>音频</span><span>共27个</span><span class="-uc-size">5G</span></li>
+                                <li><span>图片</span><span>共5个</span><span class="-uc-size">3G</span></li>
+                                <li><span>文档</span><span>共23个</span><span class="-uc-size">5G</span></li>
+                                <li><span>其他</span><span>共26个</span><span class="-uc-size">1G</span></li>
+
+                            </ul>
+                        </div>
+                        <h3>文件转码</h3>
+                        <div class="content">
+                            <ul class="-uc-consumption">
+                                <li><span>网络格式</span><span class="-uc-size">共4500分钟</span></li>
+                                <li><span>专业格式</span><span class="-uc-size">共89500分钟</span></li>
+                            </ul>
+                        </div>
+                        <h3>活动创建情况</h3>
+                        <div class="content">
+                            <ul class="-uc-consumption">
+                                <li><span>剪切</span><span class="-uc-allsize">共5个</span><span class="-uc-size">剩余25个</span></li>
+                                <li><span>视音频审阅</span><span class="-uc-allsize">共9个</span><span class="-uc-size">剩余30个</span></li>
+                            </ul>
+                        </div>-->
+
+
+                    </div>
+                </div>
+             
+                          
+            </div>
+        </div>
+</body>
+</html>

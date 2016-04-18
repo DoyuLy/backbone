@@ -1,0 +1,127 @@
+﻿<div class="transform_box">
+    <div class="caption">文件转码</div>
+    <div class="close"><span style="position:relative; top:-5px;left:0;">×</span></div>
+    <div class="transform fix js-view"></div>
+</div>
+
+<!--转码格式选择-->
+<script id="formatSelecte" type="text/x-handlebars-template">
+    <div class="transform_left l">
+        <p class="transform_left_p" title="{{name}}">{{name}}</p>
+        <img src="{{keyFramePath}}" width="175" height="100">
+        <p>视频格式：<span>{{videoFormat}}</span> </p>
+        <p>视频画面大小：<span>{{aspect}}</span></p>
+    </div>
+    <div class="transform_right l rel">
+        <ul>
+            <li>请选择转码类型：</li>
+            <li><span class="check js-format-group active" data-format="NetWorkFormat"></span>网络格式 </li>
+            <li><span class="check js-format-group " data-format="ProfessionalFormat"></span>专业格式 </li>
+        </ul>
+    </div>
+    <div class="jump-page">
+        <img src="images/manage/next1.png" class="js-next" title="下一步" />
+    </div>
+</script>
+
+<!--网络格式设置-->
+<script id="setNetworkFormat" type="text/x-handlebars-template">
+    <div class="transform_left l">
+        <p class="transform_left_p">{{name}}</p>
+        <img src="{{keyFramePath}}" width="175" height="100">
+        <p>视频格式：<span>{{videoFormat}}</span> </p>
+        <p>视频画面大小：<span>{{aspect}}</span></p>
+    </div>
+    <div class="transform-network_right l rel">
+        <ul>
+            <li style="line-height: 30px;">网络格式：</li>
+            <ul class="network-format">
+                <li style="margin-left: 0;"><span class="check js-network-format-group" data-format="FILETYPE_3GP"></span>3GP </li>
+                <li><span class="check js-network-format-group" data-format="FILETYPE_MP4"></span>MP4 </li>
+                <li><span class="check js-network-format-group" data-format="FILETYPE_FLV"></span>FLV </li>
+            </ul>
+        </ul>
+
+        <ul>
+            <li style="line-height: 30px;">转码画面大小：</li>
+            <ul class="transform-size">
+                <li><span class="check js-network-format-size-group" data-size="{{aspect}}" ></span>原画面大小 </li>
+                <li><span class="check js-network-format-size-group" data-size="480×320"></span>480×320 </li>
+                <li><span class="check js-network-format-size-group" data-size="640×480"></span>640×480 </li>
+                <li><span class="check js-network-format-size-group" data-size="800×480"></span>800×480 </li>
+                <!--<li><span class="check js-network-format-size-group"></span>1024*768 </li>-->
+                
+                <li style="width: 100%;">
+                    <span class="check js-network-format-size-group js-custom"></span>
+                    自定义
+                        <div class="custom">
+                            <div class="custom-size"><span class="size-minus js-minus" data-group="width" data-func="minus">-</span><input type="text" class="number js-numw"  value="{{width}}" /> <span class="size-add js-add" data-group="width" data-func="add">+</span></div>
+                            <span class="custom-size plus">*</span>
+                            <div class="custom-size"><span class="size-minus js-minus" data-group="height" data-func="minus">-</span><input type="text" class="number js-numh"  value="{{height}}"/> <span class="size-add js-add" data-group="height" data-func="add">+</span></div>
+                        </div>
+                </li>
+            </ul>
+        </ul>
+    </div>
+    <div class="jump-page">
+        <img src="images/manage/next3.png" title="上一步" class="js-previous" />
+        <img src="images/manage/next1.png" title="下一步" class="js-next none" />
+    </div>
+</script>
+
+<!--专业格式设置-->
+<script id="setProfessionalFormat" type="text/x-handlebars-template">
+    <div class="transform_left l">
+        <p class="transform_left_p">{{name}}</p>
+        <img src="{{keyFramePath}}" width="175" height="100">
+        <p>视频格式：<span>{{videoFormat}}</span> </p>
+        <p>视频画面大小：<span>{{aspect}}</span></p>
+    </div>
+    <div class="transform-network_right l rel">
+        <ul>
+            <li style="line-height: 30px; margin-top: 10px;">专业格式：</li>
+            <ul class="professional-format">
+                <li style="margin-left: 0;"><span class="check js-professional-format" data-format="FILETYPE_MXF"></span>蓝光 </li>
+                <li><span class="check js-professional-format disabled" data-format="FILETYPE_P2" data-disabled="true"></span>P2 </li>
+                <li><span class="check js-professional-format disabled" data-format="FILETYPE_DNXHD" data-disabled="true"></span>DNXHD </li>
+                <li><span class="check js-professional-format disabled" data-format="FILETYPE_ProRes" data-disabled="true"></span>ProRes </li>
+            </ul>
+        </ul>
+        <ul>
+            <li style="margin-top: 40px;">转码视频清晰度：</li>
+            <ul class="transform-size definition">
+                <li><span class="check js-professional-format-size disabled" data-size="2120×1280" data-disabled="true"></span>超清 </li>
+                <li><span class="check js-professional-format-size" data-size="1920×1080"></span>高清 </li>
+                <li><span class="check js-professional-format-size" data-size="720×576"></span>普清 </li>
+            </ul>
+        </ul>
+    </div>
+    <div class="jump-page">
+        <img src="images/manage/next3.png" title="上一步" class="js-previous" />
+        <img src="images/manage/next1.png" title="下一步" class="js-next none" />
+    </div>
+</script>
+
+<!--转码确认信息-->
+<script id="sureFormatInfo" type="text/x-handlebars-template">
+    <div class="transform_left l">
+        <p class="transform_left_p" title="{{name}}">{{name}}</p>
+        <img src="{{keyFramePath}}" width="175" height="100">
+        <p>视频格式：<span>{{videoFormat}}</span> </p>
+        <p>视频画面大小：<span>{{aspect}}</span></p>
+    </div>
+    <div class="transform-networksure_right l rel">
+        <p>
+            将<span class="transform_orange"> {{name}} </span>转码成 <span class="transform_orange js-targetFormat"></span> 格式，
+                转码后的画面大小是<span class="transform_orange js-targetFormatSize"></span>，
+                如果确定，请点击"开始转码"按钮，如需修改，请返回上一步。
+        </p>
+    </div>
+    <div class="jump-page">
+        <div class="c_box mt20">
+            <img src="images/manage/next3.png" title="上一步" class="js-previous" id="previous" style="position:absolute;top:180px;" />
+            <input class="creation my f18 wf" id="wf" type="button" value="转 码" style="position: absolute; top: 155px; right: 50px;">
+        </div>
+    </div>
+</script>
+

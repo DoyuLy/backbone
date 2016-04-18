@@ -1,0 +1,183 @@
+﻿@charset "utf-8";
+
+/*
+
+属性书写顺序
+[建议] 同一 rule set 下的属性在书写时，应按功能进行分组，并以
+    Formatting Model（布局方式、位置） > Box Model（尺寸） > Typographic（文本相关） > Visual（视觉效果）
+    的顺序书写，以提高代码的可读性。
+
+解释：
+
+    Formatting Model 相关属性包括：position / top / right / bottom / left / float / display / overflow 等
+    Box Model 相关属性包括：border / margin / padding / width / height 等
+    Typographic 相关属性包括：font / line-height / text-align / word-wrap 等
+    Visual 相关属性包括：background / color / transition / list-style 等
+    Typographic 相关属性包括：font / line-height / text-align / word-wrap 等
+    Visual 相关属性包括：background / color / transition / list-style 等
+
+*/
+
+body {
+    background: #292929;
+}
+
+/*头部*/
+.regs-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 101;
+    height: 65px;
+    width: 100%;
+    min-width: 1000px;
+    background-color: #181818;
+}
+/*头部线束*/
+
+.regs-header .logo {
+    float: left;
+    margin-left: 20px;
+    width: 450px;
+    height: 65px;
+    background: url(../images/mcloud/bb_s.png) no-repeat scroll 0 center;
+    background-size: 75px 56px;
+}
+
+.regs-regionbox {
+    float: right;
+    margin-right: 20px;
+    width: 250px;
+    vertical-align: middle;
+}
+
+.regs-info {
+    position: relative;
+    float: left;
+    margin-left: 20px;
+    margin-top: 15px;
+    border: 1px solid #444;
+    padding: 0 15px;
+    width: 130px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+}
+
+.title-font {
+    font-family: "微软雅黑";
+    font-weight: bold;
+}
+
+.regs-main {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.region {
+    width: 610px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.region h1 {
+    font: 30px Microsoft Yahei;
+    line-height: 80px;
+    color: #FFF;
+}
+
+.region label {
+    height: 40px;
+    font: 16px "Microsoft Yahei";
+    line-height: 40px;
+    color: #FFF;
+    display: block;
+}
+
+.region input {
+    box-shadow: none;
+}
+
+.region input[type="text"],
+.region input[type="password"]
+{
+    display: inline-block;
+    width: 398px;
+    height: 48px;
+    border: 1px solid #353131;
+    text-indent: 1em;
+    color: #AAA;
+    background-color: #1F1E1E;
+}
+
+.region .w200 { width: 200px; }
+
+.region .w300 { width: 300px; }
+
+.region .w400 { width: 400px; }
+
+.region .hidden {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+.form-group span {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+    padding-left: 30px;
+    width: 150px;
+    height: 25px;
+    line-height: 25px;
+    font-weight: bold;
+    font-family: "微软雅黑";
+    color: #a02a2a;
+}
+
+.form-group .success {
+    background: url(../images/usercenter/33.png) no-repeat scroll left center;
+}
+
+.form-group .error {
+    background: url(../images/usercenter/11.png) no-repeat scroll left center;
+}
+#verificationCode {
+    width: 198px;
+}
+#verifyCodeSend {
+    display: inline-block;
+    width: 160px;
+    height: 50px;
+    margin-left: 40px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    background: none repeat scroll 0 0 #f7f7f7;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+#verifyCodeSend:hover {
+    background-color: #eee;
+}
+#verifyCodeSend.disabled {
+    background: none repeat scroll 0 0 #f6f6f6;
+    border-color: #ebebeb;
+    color: #bbb;
+}
+#register {
+    border: none;
+    margin-top: 20px;
+    padding-left: 0;
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    font-family: Microsoft Yahei;
+    font-weight: bold;
+    background-color: rgba(13, 191, 216, 0.6);
+    cursor: pointer;
+    color: #FFF;
+}
+
+#register:hover {
+    background-color: #F08080;
+}

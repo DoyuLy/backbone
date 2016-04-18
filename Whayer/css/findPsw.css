@@ -1,0 +1,180 @@
+﻿@charset "utf-8";
+body {
+    background-color: #292929;
+}
+
+.regs-header {
+    background: #181818;
+    height: 65px;
+    min-width: 1000px;
+}
+
+.regs-header .logo {
+    margin-left: 20px;
+    width: 450px;
+    height: 65px;
+    line-height: 65px;
+    background: url(../images/mcloud/bb_s.png) no-repeat scroll 0px center;
+    background-size: 75px 56px;
+    float: left;
+}
+
+
+.w100{
+    width: 100px;
+}
+.regs-header .logo span {
+    color: #ffffff;
+    margin-left: 100px;
+    font-size: 16px;
+}
+
+.title-font {
+    font-family: "微软雅黑";
+    font-weight: bold;
+}
+
+.fg-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 130px;
+}
+
+.fg-find-step {
+    width: 1197px;
+    height: 74px;
+    background: url("../images/findPsw/step.png") no-repeat scroll 0 0;
+    margin: 0 auto;
+}
+
+.fg-find-step.first {
+    background-position: 0 0;
+}
+
+.fg-find-step.second {
+    background-position: 0 -74px;
+}
+
+.fg-find-step.thirdly {
+    background-position: 0 -148px;
+}
+
+.fg-find-step.fourthly {
+    background-position: 0 -222px;
+}
+
+.fg-find-step ul li {
+    float: left;
+    width: 25%;
+    line-height: 74px;
+    color: #ffffff;
+    font-family: "微软雅黑";
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+}
+
+.fg-content {
+    padding-top: 50px;
+}
+
+.fg-content p {
+    width: 540px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.fg-content p.btn {
+    text-align: center;
+}
+.fg-content p.remind{
+    text-align: center;
+}
+
+.fg-content p label, .fg-content p span,.fg-content p strong, .fg-content p.remind a {
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 60px;
+    line-height: 60px;
+    text-align: right;
+    font-family: "微软雅黑";
+    font-weight: bold;
+    font-size: 20px;
+    color: #ffffff;
+
+}
+.fg-content p.remind strong{
+    padding: 0;
+}
+.fg-content p.remind a{
+    padding-left: 10px;
+    color: #035356;
+    text-decoration: underline;
+}
+.fg-content p label{
+    width: 100px;
+    float: left;
+}
+.fg-content p span{
+    float: left;
+    max-width: 200px;
+    padding-left: 0;
+    text-align: left;
+}
+.fg-content p input {
+    height: 58px;
+    width: 398px;
+    float: right;
+    border: 1px solid #39393b;
+    background-color: #1f1f20;
+    text-indent: 25px;
+    color: #ffffff;
+    font-size: 16px;
+}
+.fg-button, .fg-button:visited {
+    background: #222 url(overlay.png) repeat-x;
+    display: inline-block;
+    padding: 5px 10px 6px;
+    color: #fff;
+    text-decoration: none;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    position: relative;
+    cursor: pointer
+}
+.fg-phone-btn{
+    margin-top: 15px;
+    width: 150px;
+    text-align: center;
+}
+.fg-button:hover {
+    background-color: #111;
+    color: #fff;
+}
+
+.fg-button:active {
+    top: 1px;
+}
+
+.fg-button, .fg-button:visited{
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.fg-super.fg-button, .fg-super.fg-button:visited {
+    font-size: 20px;
+    padding: 15px 100px;
+}
+.fg-medium.fg-button, .fg-medium.fg-button:visited {
+    font-size: 14px;
+    padding: 10px 15px;
+}
+.fg-blue.fg-button, .fg-blue.fg-button:visited		    { background-color: #035560; }
+.fg-blue.fg-button:hover							{ background-color: #0a8798; }

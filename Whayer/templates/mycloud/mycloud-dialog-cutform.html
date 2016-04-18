@@ -1,0 +1,36 @@
+﻿
+<div class="player_box cut-form">
+    <div class="close"><span>×</span></div>
+    <div class="content">
+        <h2 class="caption">
+            {{#if isModifyType}}修改剪切活动{{/if}}
+            {{#unless isModifyType}}创建剪切活动{{/unless}}
+        </h2>
+        <div class="title">
+            <h3>基本信息</h3>
+            <div class="cut-form-text">
+                <input class="name f18 js-edit-name input" type="text" placeholder="名称">
+                <span class="js-tooltip">*</span>
+            </div>
+            <div class="cut-form-text">
+                <textarea class="js-edit-desc input" placeholder="这里输入对该文件的简介信息"></textarea>
+                <span class="js-tooltip">*</span>
+            </div>
+        </div>
+        <div class="file_box mt20">
+            <h3>文件（<span class="js-count"></span>）</h3>
+            <ul class="mt10 js-cut-filelist">
+
+            </ul>
+        </div>
+        <div class="c_box mt20">
+            {{#if isModifyType}}
+                <input class="creation my f18 wf" id="modify" type="button" value="保存修改" />
+                <input class="creation my f18 wf" id="delete" type="button" value="删 除" />
+            {{/if}}
+            {{#unless isModifyType}}
+                <input class="creation my f18 wf" id="create" type="button" value="创 建" />
+            {{/unless}}
+        </div>
+    </div>
+</div>

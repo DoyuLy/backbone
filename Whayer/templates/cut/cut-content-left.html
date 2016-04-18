@@ -1,0 +1,33 @@
+﻿<div style="min-width:800px;">
+    <h2 class="cut-title js-title" style="display: inline-block; max-width: 700px; overflow: hidden; text-overflow: ellipsis; white-space: normal; *white-space: normal;"><!--{{name}}--></h2>
+    <h2 class="cut-title js-duration" style="display: inline-block; text-align: right; float: right; position: relative; right: 10px;">04:45:55</h2>
+</div>
+<div class="v_area">
+    <!--<img class="js-video" src="images/cut/video.jpg">-->
+
+
+    <!--<div id="cut_video"></div>-->
+
+
+    <!--<video id="cut_video" class="video-js vjs-default-skin"
+           controls preload="auto" width="1140" height="620"
+           poster=""
+           data-setup='{"example_option":true,"controls": false, "autoplay": false, "preload": "auto"}'>
+        <source src="http://video-js.zencoder.com/oceans-clip.mp4" type='video/mp4' />
+    </video>-->
+</div>
+<div class="v_bar">
+    <button class="leftmove">
+        <span class="leftarrow"></span>
+    </button>
+    <div class="ul-box">
+        <ul class="fix">
+            {{#entities}}
+                <li><img src="{{keyFramePath}}" data-id="{{contentId}}" data-name="{{name}}" data-creator="{{creator}}" data-duration="{{duration}}" class="js-video tooltip" width="80" height="50"></li>
+            {{/entities}}
+        </ul>
+    </div>
+    <button class="rightmove">
+        <span class="rightarrow"></span>
+    </button>
+</div>

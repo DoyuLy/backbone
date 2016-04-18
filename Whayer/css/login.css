@@ -1,0 +1,79 @@
+﻿@charset "utf-8";
+.login-bg{ 
+    background: #292929;
+}
+.login-box{
+	margin-top: 150px;	
+}
+.login-logo{
+	width:110px;
+	height: 78px;
+	margin: 0 auto 50px;
+}
+.login-input{
+	width: 350px;
+	margin: 10px auto;
+    position: relative;
+}
+.login-input .remin{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    height: 15px;
+    width: 15px;
+    background: url("../images/login/remin.png") no-repeat scroll left center;
+    display: block;
+}
+.login-input input{
+	height: 50px;
+	border: 1px solid #3a3a3c;
+	background: #1f1f20;
+	color: #fff;
+	font: bold 16px/50px "微软雅黑";
+	text-indent: 15px;
+	width: 348px;
+}
+.login-input .btn{
+	border: 1px solid #046775;
+	background: #035560;
+	text-indent: 0;
+	font-size: 24px;	
+	cursor: pointer;
+}
+
+a.login-forget{
+	font: 14px "微软雅黑";
+	color: #FFF;
+    cursor: pointer;
+}
+a.login-forget:hover{
+	color: #ccc;
+	
+}
+.login-input .register{
+	border: 1px solid #137273;
+	background: #222224;
+	font-size: 20px;
+	color: #00aeae;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

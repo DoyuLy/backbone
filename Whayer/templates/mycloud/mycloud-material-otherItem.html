@@ -1,0 +1,12 @@
+﻿<div class="check none"></div>
+<dt>
+    {{#if canShowSuffix}}
+    <span class="otherstyle">{{fileTypeExt}}</span>
+    {{/if}}
+    <div class="star"></div>
+    <section class="tooltip material-other" style="background-image: url('{{keyFramePath}}'); " title="{{name}}" contentid="{{contentID}}"></section>
+</dt>
+<dd>
+    <a class="js-showname"  style="width:120px;">{{name}}</a> <!--title="{{name}}"-->
+    <input class="none js-rename" type="text" value="{{name}}" style="width:120px;"/>
+</dd>

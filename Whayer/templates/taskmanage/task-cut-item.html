@@ -1,0 +1,17 @@
+﻿
+<span class="-tm-cut-name -tm-name -tm-cut-left">
+    {{#if name}}
+        {{{name}}}
+    {{/if}}
+    {{#unless name}}
+        unknown
+    {{/unless}}
+</span>
+<span class="-tm-cut-time -tm-time">{{creatorCode}} 在 {{createTime}} 创建</span>
+<span class="-tm-time -tm-part">{{entityCount}} 个片段</span>
+<div class="-tm-hide">
+    <ul>
+        <li class="shengyue_enter js-entercut"></li>
+        <li class="-tm-edit js-editcut"></li>
+    </ul>
+</div>

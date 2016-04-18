@@ -1,0 +1,28 @@
+﻿<h3>个人详细信息</h3>
+<div class="content">
+    <form id="js-form">
+        <ul class="-uc-detail">
+            <li><span>真实姓名</span><input type="text" class="validate[required,minSize[2],maxSize[16]] js-realname" placeholder="请填写您的真实姓名" /><i>*</i></li>
+            <li><span>联系电话</span><input type="text" class="validate[required,custom[phone]] js-telphone" placeholder="请填写您的有效联系方式" /><i>*</i></li>
+            <li><span>邮箱</span><input type="text" class="validate[required,custom[email]] js-email" placeholder="请填写您的邮箱地址" /><i>*</i></li>
+            <!--<li><span>邮编</span><input type="text" placeholder="请填写您的邮编" /><i>*</i></li>-->
+            <li>
+                <span>性别</span>
+                <span class="check active" data-sex="1"></span><b class="sex">男</b>
+                <span class="check" data-sex="2"></span><b class="sex">女</b>
+            </li>
+            <!--<li><span>职业</span><span class="nature">学生</span><a href="#">修改</a><i>*</i></li>-->
+            <!--<li>
+                    <span>通讯地址</span>
+                    <input class="province le" type="text" placeholder="省/直辖市/自治区" />
+                    <div class="triangle"><span class="triangle-up">▲</span><span class="triangle-up triangle-down">▼</span></div>
+                    <input class="province re" type="text" placeholder="市/区" />
+                    <div class="city"><span class="triangle-up">▲</span><span class="triangle-up triangle-down">▼</span></div>
+                    <i>*</i>
+                    <input class="add-detail" type="text" />
+                </li>
+                <li><span class="remarks">备注</span><textarea></textarea></li>-->
+            <li><span></span><input class="creation my f18 wf" id="wf" type="submit" value="保 存"></li>
+        </ul>
+    </form>
+</div>
